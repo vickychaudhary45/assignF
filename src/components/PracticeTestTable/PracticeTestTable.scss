@@ -1,0 +1,200 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.MuiPaper-elevation1 {
+  box-shadow: inherit !important;
+}
+.practice-report-table {
+  margin: 0;
+  width: 100%;
+  .course-name{
+    width: 15% !important;
+  }
+  .table-heading{
+    font-weight: 500 !important;
+    color: white !important;
+  }
+  .MuiTableCell-root {
+    font-family: "Poppins", sans-serif;
+    color: $grayA2A2A2;
+    font-size: 13px;
+    font-weight: $regular;
+    border: none;
+    padding: 10px 4px;
+    .course-name{
+      color: #1f243096;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+  .MuiTableRow-root {
+    border-bottom: 1px solid $whitef5f7fa;
+  }
+  // <---- table-head ---->
+  .MuiTableHead-root {
+    border-bottom: 1px solid $whitef5f7fa;
+    background: #555d66db;
+    th:first-child {
+      padding: 9px 0 9px 15px;
+    }
+    .date {
+      span {
+        position: relative;
+        padding: 0 17px 0 0;
+        &:after {
+          content: "\46";
+          font-family: "whiz-business" !important;
+          position: absolute;
+          right: 0;
+          color: $gray51596c;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // <---- table-body ----->
+  .MuiTableBody-root {
+    td:first-child {
+      padding: 9px 0 9px 15px;
+    }
+    td:last-child {
+      padding: 9px 15px 9px 0;
+    }
+    .course-name{
+      color: $blue1f2430;
+      font-size: 14px;
+      font-weight: $medium;
+      margin: 0;
+      @include laptop1024_1279 {
+        font-size: 13px;
+      }
+    }
+    .date {
+      font-size: 13px !important;
+      color: $grayb51596C !important;
+    }
+    // sku
+    .sku {
+      font-size: 13px;
+      color: $grayb51596C;
+    }
+    // content-box
+    .content-box {
+      font-size: 13px;
+      color: $gray51596c;
+      .icon-block {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: $grayb51596C;
+        .icon {
+          display: flex;
+          align-items: center;
+          margin: 0 15px 0 0;
+          &:before {
+            margin: 0 5px 0 0;
+          }
+        }
+      }
+    }
+    // course
+    .course {
+      .course-img {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        figure {
+          max-width: 60px;
+          margin: 0 10px 0 0;
+          @include laptop1024_1279 {
+            max-width: 55px;
+          }
+          img{
+            border-radius: 4px;
+            width: 60px;
+            height: 37px;
+          }
+        }
+        .course-detail {
+          color: $blue1f2430;
+          font-size: 14px;
+          font-weight: $medium;
+          margin: 0;
+          @include laptop1024_1279 {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    // actions
+    .actions {
+      position: relative;
+      display: inline-block;
+      text-align: right;
+      font-size: 24px;
+      margin: 0;
+      cursor: pointer;
+      transition: $transDefault;
+      .icon-action {
+        display: flex;
+        justify-content: flex-end;
+        color: $grayA2A2A2;
+        transition: $transDefault;
+      }
+      &:hover .action-dropdown {
+        color: $white846e6e;
+        display: block;
+      }
+    }
+    .action-dropdown {
+      background: $white;
+      position: absolute;
+      right: 0;
+      top: 24px;
+      box-shadow: 2px 2px 10px $white0029;
+      color: $gray51596B;
+      display: none;
+      z-index: 999;
+      border-radius: 4px;
+      ul {
+        padding: 5px 0;
+        margin: 0;
+        li {
+          padding: 5px 16px;
+          .link {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: $gray51596B;
+            white-space: nowrap;
+
+            .icon {
+              margin: 0 10px 0 0;
+            }
+            span {
+              margin: 0;
+            }
+          }
+          &:hover {
+            background: $whiteF4F5F7;
+            .link {
+              color: $blue1f2430;
+            }
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.input-box-group{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}

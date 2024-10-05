@@ -1,0 +1,112 @@
+@import "../../config/variables.scss";
+
+.sign-in-block {
+  max-width: 390px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: $white;
+  .sign-container {
+    .sign-header {
+      padding: 25px 30px 0;
+      @include xsm {
+        padding: 25px 20px 0;
+      }
+      .title {
+        font-size: 20px;
+        text-align: center;
+        font-weight: $semibold;
+        margin-bottom: 0;
+        text-transform:capitalize;
+      }
+    }
+    .sign-content {
+      padding: 25px 30px;
+      text-align: center;
+      @include xsm {
+        padding: 25px 20px 25px;
+      }
+      form {
+        margin-bottom: 10px;
+        .input-box-group {
+          margin-bottom: 15px;
+          .input-box {
+            .myemail {
+              background-color: #F5F7FA !important;
+            }
+            .myemail:-webkit-autofill{
+              box-shadow: none;
+              -webkit-box-shadow: 0 0 0 30px #f5f7fa inset !important;
+            }
+            margin-bottom: 10px;
+            .inputPassword {
+              display: flex;
+              flex-direction: row;
+              border-radius: 25px;
+              background-color: #F5F7FA !important;
+            .mypass {
+              height: 45px;
+              border: none;
+              background-color: none;
+              @include xsm {
+                height: 35px;
+              }
+              @include sm {
+                height: 40px;
+              }
+              @include md {
+                height: 40px;
+              }
+            }
+            .mypass:-webkit-autofill {
+              box-shadow: none;
+              -webkit-box-shadow: 0 0 0 30px #f5f7fa inset !important;
+                }
+              .VisiIcons {
+                border-radius: 15px;
+                width: 40px;
+                margin-top: 10px;
+                cursor: pointer;
+                font-size: 18px;
+              }
+          }
+            }
+        }
+        .btn {
+          color: $white;
+          background: $orange;
+          width: 100%;
+          height: 45px;
+          line-height: 45px;
+          font-size: 16px;
+          font-weight: 600;
+          border-radius: 6px;
+          border: 0;
+          @include xsm {
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+          }
+          @include sm {
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+          }
+          @include md {
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+          }
+          &:hover {
+            background: $hovere05613;
+          }
+        }
+      }
+      .forgot-password {
+        color: $blue;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}

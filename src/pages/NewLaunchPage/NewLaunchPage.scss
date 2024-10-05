@@ -1,0 +1,326 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.content {
+  width: 100%;
+  .MuiPaper-elevation1 {
+    box-shadow: inherit !important;
+  }
+  .new-launch-page {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 0 0;
+    @include laptop1024_1279 {
+      padding: 25px 0 0 0;
+    }
+    .heading-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 28px auto 15px 20px;
+      .title {
+        font-size: 22px;
+        color: $gray202020;
+        font-weight: $medium;
+        margin: 0 auto 0 0;
+        @include laptop1024_1279 {
+          font-size: 20px;
+        }
+      }
+    }
+    // details-block
+    .details-block {
+      .search-box {
+        position: relative;
+        max-width: 230px;
+        width: 100%;
+        margin: 0;
+        input {
+          height: 32px;
+          background: $white;
+          border-radius: 4px;
+          font-size: 11px;
+          padding: 10px 15px 10px 33px;
+          border-radius: 4px;
+          background: $whitef5f7fa;
+          @include laptop1024_1279 {
+            height: 30px;
+          }
+        }
+      }
+      .react-loader {
+        position: relative;
+        left: 35vw;
+        width: auto;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    // <---- my-training-table ---->
+    .table {
+      margin: 0;
+      .MuiTableCell-root {
+        font-family: "Poppins", sans-serif;
+        color: $grayA2A2A2;
+        border: none;
+        padding: 10px 0px 10px 55px;
+      }
+      .MuiTableRow-root {
+        border-bottom: 1px solid $whitef5f7fa;
+      }
+      // <---- table-head ---->
+      .MuiTableHead-root {
+        border-bottom: 1px solid $whitef5f7fa;
+        background: #555d66db;
+        th:first-child {
+          padding: 9px 0 9px 20px;
+        }
+        th:last-child {
+          padding: 9px 20px 9px 0;
+          text-align: center;
+        }
+        th:nth-child(2) {
+          padding-left: 55px;
+        }
+        th:nth-child(3) {
+          padding-right: 40px;
+          @include lg {
+            padding-left: 30px;
+            padding-right: 0;
+          }
+        }
+      }
+      .MuiTableCell-head {
+        font-size: 15px;
+        color: $white;
+      }
+
+      // <---- table-body ---->
+      .MuiTableBody-root {
+        th:first-child {
+          padding: 9px 0 9px 15px;
+        }
+        td:first-child {
+          float: left;
+          padding-left: 30px;
+          padding-top: 20px;
+        }
+        td:last-child {
+          padding: 9px 85px 9px 0px;
+          @include xsm {
+            padding: 9px 0px 9px 0px;
+          }
+          @include sm {
+            padding: 9px 0px 9px 0px;
+          }
+          @include md {
+            padding: 9px 0px 9px 0px;
+          }
+        }
+        .MuiTableCell-body {
+          font-size: 13px !important;
+        }
+        .course {
+          .course-img {
+            display: flex;
+            align-items: center;
+            line-height: 1.4;
+            figure {
+              max-width: 60px;
+              margin: 0 10px 0 0;
+              @include laptop1024_1279 {
+                max-width: 55px;
+              }
+              img {
+                border-radius: 4px;
+                width: 60px;
+                height: 37px;
+              }
+            }
+            .course-detail {
+              color: $blue1f2430;
+              font-size: 14px;
+              font-weight: $medium;
+              margin: 0;
+              @include laptop1024_1279 {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+    .btn-access {
+      display: inherit;
+      float: right;
+      color: $white;
+      font-size: 12px;
+      font-weight: $medium;
+      text-align: center;
+      text-decoration: none;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-access-two {
+      display: inherit;
+      float: right;
+      color: $white;
+      font-size: 12px;
+      font-weight: $medium;
+      text-align: center;
+      text-decoration: none;
+      padding: 6px 35px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-access-admin {
+      display: inherit;
+      float: right;
+      font-size: 12px;
+      font-weight: $medium;
+      text-align: center;
+      text-decoration: none;
+      padding: 6px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .btn-enroll {
+      display: inherit;
+      float: right;
+      color: $white;
+      background: $orange;
+      font-size: 12px;
+      font-weight: $medium;
+      text-align: center;
+      text-decoration: none;
+      padding: 6px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+      &:hover {
+        background: $hovere05613;
+      }
+    }
+    .btn-enroll-requested {
+      font-weight: $medium;
+      background: grey;
+      margin: 0 0 0 auto;
+      padding: 6px 40px;
+    }
+      }
+      .no-course-table-row {
+        height: 53px;
+        .no-course {
+          position: relative;
+          left: 100%;
+          text-align: center;
+        }
+      }
+    }
+    .item-1 {
+       margin-right: 50px !important;
+      @include lg {
+          margin-right: 15px !important;
+      }
+    }
+    .icon-btn {
+      margin-right: 0px;
+      height: 1.4rem;
+      width: 25px;
+      border-radius: 7px;
+      background-color: #f0f8ff;
+      &:hover {
+        background-color: $grayDFE6EF;
+        cursor: pointer;
+      }
+      .icon {
+        font-size: 20px;
+        color: $blue;
+      }
+    }
+    .bannerContainer {
+      display: flex;
+      position: relative;
+      height: 25vh;
+      width: 93%;
+      align-items: center;
+      margin-bottom: 20px;
+      background-color: #fff2db;
+      max-width: 1516px;
+      @include xsm {
+        flex-direction: column;
+      }
+      .bannerText {
+        padding: 80px 40px 80px 115px;
+        h3 {
+          font-size: 30px;
+          font-family: var(--font-family-montserrat);
+          font-display: swap;
+          line-height: normal;
+          @include md {
+            font-size: 18px;
+          }
+          @include sm {
+            font-size: 15px;
+          }
+          @include xsm {
+            font-size: 10px;
+            margin: auto;
+          }
+        }
+        span {
+          font-size: 1.5rem;
+          font-family: var(--font-family-montserrat);
+          font-display: swap;
+          line-height: normal;
+          font-weight: 500;
+          color: orange;
+          @include md {
+            font-size: 16px;
+          }
+          @include sm {
+            font-size: 13px;
+          }
+          @include xsm {
+            font-size: 8px;
+          }
+        }
+        @include xsm {
+          padding: 15px;
+        }
+        @include sm {
+          padding: 80px 40px 80px 30px;
+        }
+      }
+      .bannerImage {
+        position: relative;
+        right: -130px;
+        width: 40%;
+        display: block;
+        @include md {
+          right: 18px;
+        }
+        @include sm {
+          right: 16px;
+          max-height: 150px;
+        }
+        img {
+          max-height: 145px;
+          @include md {
+            max-height: 115px;
+          }
+          @include xsm {
+            max-width: 80px;
+          }
+        }
+        @include xsm {
+          width:auto;
+          right: 0;
+        }
+      }
+    }
+    .MuiTooltip-popper {
+      display: block !important;
+    }
+  }
+}

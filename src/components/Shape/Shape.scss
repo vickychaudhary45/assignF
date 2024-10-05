@@ -1,0 +1,17 @@
+@import "../../config/mixin.scss";
+
+.shape {
+  position: fixed;
+  top: 65px;
+  left: 260px;
+  @include laptop1024_1279 {
+    left: 80px;
+  }
+  @include lg {
+    left: 230px;
+  }
+  figure {
+    max-width: 30px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,77 @@
+/* 5. desktop responsive css 1024px to 1119px
+------------------------------------------------------------------------------*/
+@media (min-width:1024px) and (max-width:1119px){
+
+	/* --------- home-page ---------- */
+	/* ------------------------------ */
+	/* header */
+	header .header-left .logo{max-width: 270px;}
+
+	/* header course-menu */
+	header .dropdown-menu .list ul li .icon.icon-font-submenu-arrow{right: 15px;}
+	header .dropdown-menu .list ul li a{padding: 8px 10px 8px 10px;}
+
+	header .dropdown-menu .step-1{width: 250px;}
+	header .dropdown-menu .step-1 ul li a{font-size: 14px;}
+
+	header .dropdown-menu.open .step-2.current,
+	header .dropdown-menu.open .step-2 .current{width: 170px;}
+	header .dropdown-menu .step-2 ul li a{padding: 10px 30px 10px 15px;}
+	
+	header .dropdown-menu.open .step-3.current{padding:25px 20px;}
+	header .dropdown-menu{max-width: 240px;}
+	header .dropdown-menu.desktop .drawerer{width: 75%;}
+
+	.dropdown-menu.desktop .submenu.detail{width: 360px !important;}
+	.dropdown-menu.desktop .submenu.detail a{padding: 0 20px 0 20px;}
+
+
+	/* banner */
+	.banner-block .banner{height: 410px;}
+	.banner-block .banner .container .caption{max-width: 350px;}
+	.banner-block .banner .container .caption h1{font-size: 34px; line-height: 1.3;}
+	.banner-block .banner .container .caption .sub-title{font-size: 20px;}
+	.banner-block .banner .container .img-block{max-width: 590px;}
+
+	/* upskilled-sec */
+	.upskilled-sec .companies-group .company{padding: 28px 26px;}	
+
+	/* deliver-sec */
+	.deliver-sec .caption-block h2{font-size: 26px; margin-bottom: 12px;}
+	.deliver-sec .upskill-box-group .upskill-box .img-box{margin-bottom: 22px;}
+	.deliver-sec .upskill-box-group .upskill-box .img-box .img-icon{max-width: 70px;}
+
+	/* sandboxes-sec */
+	.sandboxes-sec .caption-block p{font-size: 28px; line-height: 42px;}
+	.sandboxes-sec .caption-block h2{font-size: 40px; line-height: 60px;}
+
+	/* three-blocks */
+	.three-blocks .block-group .block{max-width: calc(100% / 3 - 10px); padding: 30px 30px 40px 35px;}
+	.three-blocks .block-group .block figure{max-width: 75px;}
+	.three-blocks .block-group .block .title{font-size: 21px; margin-bottom: 17px;}
+	.three-blocks ul li{font-size: 17px; padding-left: 45px;}
+	.three-blocks ul li:before{width: 30px; height: 30px;}
+
+	/* explore-category */
+	.explore-category .block-group .block{padding: 40px 15px;}
+	.explore-category .block-group .block figure{max-width: 37px;}
+	.explore-category .block-group .block span{font-size: 18px; margin-left: 15px;}
+
+	/* contactUs-block */
+	.contactUs-block .inner-block .left-block{font-size: 28px; line-height: 42px;}
+	.contactUs-block .inner-block .left-block span{font-size: 22px; line-height: 35px;}
+	.contactUs-block .inner-block .right-block .btn-contact{padding: 0 45px;}
+
+	/* feature-block */
+	.feature-block .features-block figure {max-width: 400px;}
+	.feature-block .features-block .caption{max-width: 340px;}
+	.feature-block .features-block .caption h4{font-size: 30px; line-height: 1.3;}
+	.feature-block .features-block .caption h4 strong{font-size: 65px;}	
+
+	/* cloud-learning */
+	.cloud-learning{padding: 55px 0;}
+	.cloud-learning .block .left h6{font-size: 26px; margin-bottom: 25px;}
+	.cloud-learning .block form{padding: 25px;}
+	.cloud-learning .block form .input-box{max-width: calc(100% / 2 - 6px); margin: 0 0 14px;}
+
+}

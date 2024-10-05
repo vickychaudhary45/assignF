@@ -1,0 +1,114 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.email-box {
+  .container {
+    font-family: "Poppins", sans-serif;
+    max-height: 550px;
+    overflow: auto;
+    &::-webkit-scrollbar:vertical {
+      width: 10px;
+    }
+    .form-email {
+      width: 90%;
+      margin-top: 40px;
+      margin-left: 10px;
+      h6 {
+        margin-bottom: -28px;
+        color: #e18700;
+      }
+      .switch-button-1 {
+        position: relative;
+        left: 79px;
+        bottom: 0;
+        display: inline;
+      }
+      .switch-button-2 {
+        position: relative;
+        left: 241px;
+        bottom: 0;
+        display: inline;
+      }
+      .MuiFormControlLabel-root {
+        margin-right: -10px !important;
+        margin-left: 96px !important;
+        width: 152px !important;
+        border-radius: 6px;
+        height: 35px;
+      }
+      .box {
+        .input-field {
+          border: 1px solid #d3d3d3;
+          border-radius: 5px !important;
+          width: 90% !important;
+          position: relative;
+          left: 97px;
+        }
+        label {
+          position: relative;
+          top: 35px;
+          left: 25px;
+          font-size: 12px;
+          color: black;
+        }
+        .cke_chrome {
+          margin-left: 100px;
+          border-radius: 6px;
+          width: 90%;
+          .cke_top,
+          .cke_bottom {
+            background: #eff3f5;
+          }
+        }
+        .note-box {
+          width: 50%;
+          margin-left: 100px;
+          margin-bottom: 40px;
+        }
+        .note-heading {
+          color: black;
+          font-size: 12px;
+          position: relative;
+          top: 20px;
+          left: 45px;
+        }
+      }
+      hr {
+        margin-bottom: 30px;
+        background: #add8e6;
+        height: 1px;
+      }
+      .btn-box {
+        font-family: "Poppins", sans-serif;
+        .MuiButtonBase-root {
+          font-size: 13px;
+          width: 135px;
+          border-radius: 4px;
+          margin-bottom: 30px;
+          background: $blue;
+          color: #ffffff;
+          line-height: 20px;
+          font-weight: 500;
+          &:hover {
+            background: $bluehover;
+          }
+        }
+      }
+    }
+    label,h6 {
+      small {
+        color: red;
+      }
+    }
+  }
+  .loader-div{
+    display: flex;
+    align-self: center;
+    height: 30vh;
+    span{
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+

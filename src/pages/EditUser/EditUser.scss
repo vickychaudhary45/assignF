@@ -1,0 +1,113 @@
+@import "../../config/variables.scss";
+
+.content {
+  width: 100%;
+  .loader-div{
+    display: flex;
+    align-self: center;
+    height: 15vh;
+    span{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .edit-user-page {
+    position: relative;
+    .details-block {
+      padding: 15px;
+      background: $white;
+      box-shadow: 1px 1px 2px $white000d;
+      border-radius: 8px;
+      .MuiAppBar-colorDefault {
+        color: $white;
+        background-color: $white;
+        box-shadow: none;
+      }
+      .MuiPaper-root {
+        font-family: "Poppins", sans-serif;
+      }
+      .MuiTabs-root {
+        margin: 0;
+      }
+      .MuiTab-wrapper {
+        align-items: start;
+      }
+      .MuiTab-root {
+        font-family: "Poppins", sans-serif;
+        min-height: 30px;
+        text-transform: capitalize;
+        min-width: auto;
+        font-size: 16px;
+        font-weight: $medium;
+        color: $gray51596c;
+        padding: 0;
+        margin: 0 20px 0 0;
+      }
+      .MuiAppBar-root {
+        box-shadow: none;
+      }
+      .MuiPaper-elevation4 {
+        box-shadow: none;
+        height: 33px;
+        border-bottom: 1px solid $grayddd;
+      }
+      .MuiTab-textColorPrimary.Mui-selected {
+        font-size: 16px;
+        color: $blue;
+        font-weight: $medium;
+        padding: 0;
+      }
+      .MuiTabs-indicator {
+        bottom: 15px;
+        background-color: $blue;
+        height: 3px;
+      }
+      .tab-content {
+        .MuiBox-root-7 {
+          padding: 0 !important;
+        }
+        .MuiBox-root {
+          padding: 0 !important;
+        }
+        form {
+          max-width: 470px;
+          width: 100%;
+          padding: 20px 0 0 0;
+          margin: 0;
+          .input-box-group {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .input-box {
+              width: 49%;
+              margin: 0 0 20px 0;
+              label {
+                font-size: 13px;
+                color: $gray51596c;
+                font-weight: $medium;
+                margin: 0 0 3px;
+                span {
+                  color: $redLight;
+                }
+              }
+              input {
+                font-family: "Poppins", sans-serif;
+                height: 35px;
+                font-size: 13px;
+                border-radius: 6px;
+                &::placeholder {
+                  color: $grayb7b7b7;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+          .btn-group{
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

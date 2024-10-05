@@ -1,0 +1,199 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.notification-badge {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 50%;
+  background-color: #EF0107;
+  color: white;
+  font-size: 11px;
+  margin-left: 3px !important;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #EF0107;
+}
+
+.menu-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.notification-dot {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  height: 6px;
+  width: 6px;
+  margin-right: 10px;
+}
+
+.sidebar {
+  height: calc(100vh - 80px);
+  min-height: 600px;
+  max-width: 266px;
+  width: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 10px 15px 0;
+  background: $white;
+  border-radius: 0px 0px 30px 0px;
+  overflow-y: scroll;
+  @include lg {
+    max-width: 230px;
+  }
+  @include laptop1024_1279 {
+    max-width: 80px;
+    padding: 10px;
+  }
+  .copyright-link {
+    position: fixed;
+    background-color: white;
+    opacity: 1;
+    z-index: 100;
+    width: 100%;
+    height: 4%;
+    bottom: 0;
+    left: 0;
+    color: $grayA2A2A2;
+    font-size: 12px;
+    text-align: center;
+    @include laptop1024_1279 {
+      display: none;
+    }
+    a {
+      color: $grayA2A2A2;
+      transition: $transDefault;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .links-block {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid $grayddd;
+    &:last-child {
+      padding: 20px 0;
+      border-bottom: none;
+    }
+    ul {
+      margin: 0;
+      li {
+        width: 100%;
+        margin: 0 0 6px 0;
+        padding: 0;
+        &:last-child {
+          margin: 0;
+        }
+        &::before {
+          display: none;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+          color: $gray62646a;
+          text-decoration: none;
+          margin: 0;
+          padding: 10px 15px;
+          border-radius: 8px;
+          line-height: 1;
+          transition: $transDefault;
+          @include laptop1024_1279 {
+            padding: 8px 10px;
+            justify-content: center;
+          }
+          .icon {
+            font-size: 20px;
+            margin: 0 10px 0 0;
+            color: $gray62646a;
+            transition: $transDefault;
+            @include laptop1024_1279 {
+              margin: 0;
+            }
+          }
+          &:hover .icon {
+            color: $orangef16521;
+          }
+
+          &:hover {
+            color: $orangef16521;
+            background: $orangefff0e2;
+          }
+          span {
+            margin: 0;
+            @include laptop1024_1279 {
+              display: none;
+            }
+          }
+        }
+        a.active {
+          background: $orangefff0e2;
+          border-radius: 8px;
+          font-weight: $medium;
+          color: $orangef16521;
+          @include laptop1024_1279 {
+            border-radius: 6px;
+          }
+          .icon {
+            font-size: 20px;
+            color: $orangef16521;
+          }
+        }
+        .MuiListItem-button{
+          .MuiListItemIcon-root{
+            min-width: 30px !important;
+            .icon {
+              font-size: 20px;
+              margin: 0 10px 0 0;
+              color: $gray62646a;
+              transition: $transDefault;
+              @include laptop1024_1279 {
+                margin: 0;
+              }
+            }
+          }
+          .MuiListItemText-root{
+            span{
+              font-size: 14px !important;
+            }
+          }
+          &:hover .icon {
+            color: $orangef16521 !important;
+          }
+
+          &:hover {
+            color: $orangef16521 !important;
+            background: $orangefff0e2 !important;
+          }
+        }
+        .MuiList-root{
+          a{
+            font-size: 13px;
+            padding: 10px 25px;  
+          }
+          a.active {
+            background: $orangefff0e2;
+            border-radius: 8px;
+            font-weight: $medium;
+            color: $orangef16521;
+            @include laptop1024_1279 {
+              border-radius: 6px;
+            }
+            .icon {
+              font-size: 20px;
+              color: $orangef16521;
+            }
+          }
+        }
+      }
+    }
+  }
+  .MuiTooltip-popper {
+    display: none;
+    @include laptop1024_1279 {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../config/variables.scss";
+
+.thank-you-block {
+  display: block;
+  text-align: center;
+  figure {
+    max-width: 50px;
+    width: 100%;
+    margin-bottom: 18px;
+    @include xsm {
+      max-width: 40px;
+    }
+    @include sm {
+      max-width: 40px;
+    }
+    @include md {
+      max-width: 40px;
+    }
+  }
+  .caption-group {
+    max-width: 390px;
+    width: 100%;
+    .title {
+      font-size: 22px;
+      color: $blue1f2430;
+      font-weight: 500;
+      margin-bottom: 20px;
+      @include xsm {
+        font-size: 19px;
+        margin-bottom: 16px;
+      }
+      @include sm {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+      @include md {
+        font-size: 20px;
+        margin-bottom: 18px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: $gray51596c;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      @include xsm {
+        margin-bottom: 22px;
+      }
+      @include sm {
+        margin-bottom: 25px;
+      }
+      @include md {
+        margin-bottom: 25px;
+      }
+    }
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $blue;
+      text-decoration: none;
+      &:hover {
+        color: #2c6db9;
+      }
+      .icon-arrow-right {
+        margin: 0 5px 0 0;
+        transform: rotate(180deg);
+      }
+      span {
+        margin: 0;
+      }
+    }
+  }
+}

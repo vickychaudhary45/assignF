@@ -1,0 +1,61 @@
+@import "../../config/variables.scss";
+
+.maintenance-top{
+  display: block;
+  background-color: #D0342c;
+  padding: 0 10px 0 10px;
+  position: sticky;
+  top : 60px;
+  left : 0;
+  width : 100vw;
+  z-index: 100;
+  border: 1px solid white;
+  color : white !important;
+  & .container{
+    text-align: center;
+    p {
+      color : white !important;
+      margin : 0px auto;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    a {
+      text-decoration: underline !important;
+      color : white;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}
+
+.maintenance-bottom{
+  display: block;
+  background-color: #D0342c;
+  padding: 0 10px 0 10px;
+  position: fixed;
+  bottom : 0;
+  left : 0;
+  width : 100vw;
+  z-index: 100;
+  margin : auto auto -5px auto;
+  border: 1px solid white;
+  & .container{
+    text-align: center;
+    p {
+      color : white !important;
+      font-weight: 600;
+      margin : 0px auto;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: underline !important;
+      color : white;
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+}
+
+.maintenance-none{
+  display: none;
+}

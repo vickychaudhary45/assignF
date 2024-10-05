@@ -1,0 +1,14 @@
+.upload-images-modal {
+  ul {
+    margin: 10px 1px;
+    font-size: 13px;
+    li {
+      &:before {
+        background: none !important;
+      }
+      span {
+        color: red;
+      }
+    }
+  }
+}

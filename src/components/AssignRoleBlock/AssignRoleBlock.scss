@@ -1,0 +1,70 @@
+@import "../../config/variables.scss";
+
+.assign-role-block {
+    font-family: "Poppins", sans-serif;
+    border: 1px solid $grayddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    .head-block {
+      display: flex;
+      justify-content: space-between;
+      background: $whitef5f7fa;
+      padding: 10px 10px 10px 15px;
+      border-radius: 6px 6px 0 0;
+      .title {
+        font-size: 13px;
+        font-weight: $medium;
+        color: $gray51596c;
+        margin: 0;
+        span {
+          color: $redLight;
+        }
+      }
+      .title-two {
+        margin-top: 14px;
+      }
+      .add-role {
+        font-size: 12px;
+        font-weight: $medium;
+        color: $blue;
+        margin: 0;
+      }
+    }
+  .checkbox-group {
+      margin: 0px;
+      padding: 10px;
+      .checkbox-style {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: $gray51596c;
+      padding: 0 0 0 20px;
+      margin-bottom: 20px;
+      .checkmark {
+        top: 2px;
+      }
+    }
+    .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:before {
+      opacity: 9 !important;
+    }
+    .MuiButtonBase-root.MuiAccordionSummary-root.MuiAccordionSummary-gutters.summary.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+      display: flex !important;
+    }
+    .css-1aj41gs.Mui-expanded::before {
+      opacity: 1 !important; /* When expanded */
+    }
+  }
+}
+.summary {
+  display: flex !important;
+  justify-content: space-between;
+}
+.single-menu {
+  display: flex;
+}
+.accordion-sub {
+  margin-right: 0;
+}
+.accordion-title {
+  margin: 0;
+}

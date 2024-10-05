@@ -1,0 +1,111 @@
+.box {
+  width: 500px;
+  margin: 0px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  .search-input {
+    flex: 1;
+    width: auto;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+}
+.workspace-container {
+  padding-top: 30px;
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+  }
+  .workspace-top {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+  }
+}
+.select-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0px;
+  margin-bottom: 20px;
+  .btn {
+    border-radius: 5px;
+  }
+}
+.refresh-btn {
+  .icon-refresh {
+    color: #ffff;
+  }
+  .refresh-btn-txt {
+    margin-left: 5px;
+    color: #ffff;
+    font-size: 13px;
+    font-family: poppins;
+  }
+  padding: 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f06421;
+}
+// credentials modal
+.input-div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  .input-field {
+    color: gray;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  span {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .copy-btn {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}
+.Mui-selected {
+  border-radius: 10px;
+  background-color: #ffffff !important;
+  color : #f16521 !important;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -25px !important;
+  border : 1px dotted #f16521 !important;
+  border-bottom: none !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  min-width: 200px;
+  background-color: #fff0e2 ;
+  border-radius: 5px;
+  margin-right: 2px;
+  border: 1px dotted rgb(218, 110, 110);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px inset;
+  img{
+    margin: 0;
+    margin-right: 12px;
+  }
+}
+
+.MuiTabs-indicator{
+border-radius: 50%;
+background-color: #ffffff;
+height : 3px;
+}

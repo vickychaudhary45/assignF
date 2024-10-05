@@ -1,0 +1,274 @@
+@import "../../config/variables.scss";
+
+/* modal-notify */
+/* modal-account */
+/* modal-account login*/
+/* modal-review-video */
+/* modal-account login*/
+/* header */
+
+.annoucement-block {
+	position: static;
+	top: 0;
+	width: 100%;
+	background: #1F2430;
+	text-align: center;
+	z-index: 999;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		max-width: 100%;
+		padding: 5px 5px;
+	}
+	p {
+		display: inline-block;
+		color: #fff;
+		font-size: 13px;
+		line-height: 20px;
+		margin: 0 auto;
+		strong {
+			font-weight: 600;
+			font-style: italic;
+		}
+		.link {
+			font-weight: 600;
+			color: #f06421;
+			font-style: italic;
+		}
+	}
+	.icon-font-cross {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #D1D1D1;
+		max-width: 28px;
+		width: 100%;
+		height: 28px;
+		font-size: 10px;
+		margin: 0 0 0 10px;
+		border-radius: 50%;
+		float: right;
+		cursor: pointer;
+		transition: 0.2s ease-out;
+		&:hover {
+			color: #fff;
+			background: #3B414E;
+		}
+	}
+}
+
+.model-title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-left: 20px;
+	font-size: 18px;
+	padding-top: 10px;
+}
+  
+.modal-body .input-box label small {
+	color: #ff615e;
+}
+.errormsg{
+	color: #ff615e;
+	font-size: 12px;
+}
+.modal-cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	transform: translateZ(0);
+	background-color: rgba(0, 0, 0, 0.8);
+	form {
+	  margin-bottom: 0px;
+	  .input-box-group {
+		margin-bottom: 0px;
+		.input-box {
+		  margin-bottom: 10px;
+		  input {
+			height: 45px;
+			border: 1px solid $grayddd;
+			border-radius: 6px;
+			background: none;
+			width: 94%;
+			background: #f3f3f4;
+			border: 0;
+			padding: 0px 10px;
+			@include xsm {
+			  height: 35px;
+			}
+			@include sm {
+			  height: 40px;
+			}
+			@include md {
+			  height: 40px;
+			}
+		  }
+		  .overview {
+			display: inline-flex;
+			align-items: center;
+			background: #2e7bd6;
+			display: inline-flex;
+			width: inherit;
+			i {
+			  font-size: 25px;
+			  font-weight: 400;
+			  margin-left: 10px;
+			  @include xsm {
+				font-size: 18px;
+			  }
+			  @include sm {
+				font-size: 20px;
+			  }
+			  @include md {
+				font-size: 22px;
+			  }
+			}
+			&:hover {
+			  background: #2c6db9;
+			}
+		  }
+		}
+	  }
+	  .btn {
+		color: $white;
+		background: $orange;
+		width: 100%;
+		height: 45px;
+		line-height: 45px;
+		font-size: 16px;
+		font-weight: 600;
+		border-radius: 6px;
+		border: 0;
+		margin-top: 10px;
+		border-radius: 30px;
+		@include xsm {
+		  height: 35px;
+		  line-height: 35px;
+		  font-size: 14px;
+		}
+		@include sm {
+		  height: 40px;
+		  line-height: 40px;
+		  font-size: 15px;
+		}
+		@include md {
+		  height: 40px;
+		  line-height: 40px;
+		  font-size: 15px;
+		}
+		&:hover {
+		  background: $hovere05613;
+		}
+	  }
+	  .btn-cancel {
+		width: 35%;
+		color: #1f2430;
+		background: #f3f3f4;
+		margin-left: 5px;
+		border-radius: 30px;
+	  }
+	  .btn-cancel:hover{
+		color: #fff;
+	  }
+	}
+}
+.modal-area {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 2.5em 1.5em 1.5em 1.5em;
+	background-color: #ffffff;
+	box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	border-radius: 8px;
+}
+@media screen and (min-width: 500px) {
+	/* Center the Modal! */
+	.modal-area {
+	  left: 50%;
+	  top: 50%;
+	  height: auto;
+	  transform: translate(-50%, -50%);
+	  max-width: 30em;
+	  max-height: calc(100% - 1em);
+	}
+}
+._modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #9e9ea6;
+	background: #f3f3f4;
+	width: 26px;
+	height: 26px;
+	font-size: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: .2s ease-in-out;
+}
+._modal-close-icon {
+	width: 25px;
+	height: 25px;
+	fill: transparent;
+	stroke: black;
+	stroke-linecap: round;
+	stroke-width: 2;
+}
+.modal-body {
+	padding: 1.25em;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin-top: 20px;
+}
+._hide-visual {
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;
+}
+.scroll-lock {
+	overflow: hidden;
+}
+.show-success{
+	color: green;
+}
+.request-demo{
+	color: #fff !important; 
+	background: #F06421; 
+	padding: 10px 25px; 
+	// margin: 15px;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 6px;
+	border: 0;
+	// margin-top: 10px;
+	border-radius: 30px;}
+.request-demo:hover{background: #e05613;}
+.login-group .sign-in {
+	color: #fff !important; 
+	background: #fff2e0; 
+	padding: 10px 20px; 
+	margin: 15px;
+	font-size: 15px;
+	font-weight: 600;
+	border-radius: 6px;
+	border: 0;
+	// margin-top: 10px;
+	border-radius: 30px;
+}

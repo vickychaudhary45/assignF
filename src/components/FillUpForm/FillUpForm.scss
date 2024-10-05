@@ -1,0 +1,286 @@
+@import "../../config/variables.scss";
+
+.fill-up-box {
+  width: 100%;
+  .logo {
+    max-width: 300px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin: auto auto 15px auto;
+    display: none;
+    @include xsm {
+      max-width: 240px;
+      display: block;
+      margin: auto auto 25px auto;
+    }
+    @include sm {
+      max-width: 260px;
+      display: block;
+      margin: auto auto 25px auto;
+    }
+  }
+  .head {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1f2430;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.4;
+    @include xsm {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    @include sm {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    @include md {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    @include screen1024_1240 {
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+    span {
+      font-size: 16px;
+      font-weight: 400;
+      display: block;
+      @include xsm {
+        font-size: 13px;
+      }
+      @include sm {
+        font-size: 13px;
+      }
+      @include md {
+        font-size: 14px;
+      }
+      @include screen1024_1240 {
+        font-size: 15px;
+      }
+    }
+  }
+  form {
+    max-width: 480px;
+    width: 100%;
+    padding: 25px 40px;
+    background: #fff;
+    border-radius: 8px;
+    @include xsm {
+      max-width: 450px;
+      padding: 15px;
+    }
+    @include sm {
+      padding: 20px 30px;
+    }
+    @include md {
+      padding: 15px 20px;
+    }
+    .input-box-group {
+      .input-box {
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 20px;
+        }
+        .react-tel-input{
+          .flag-dropdown{
+            padding: 2px;
+          }
+          .form-control{
+            min-width: 400px;
+          }
+          .country-list {
+            li:before{
+              content: none;
+            }
+          }
+        }
+        label {
+          font-size: 13px;
+          font-weight: 500;
+          color: #1f2430;
+          margin-bottom: 5px;
+          @include xsm {
+            font-size: 12px;
+            margin-bottom: 3px;
+          }
+          @include sm {
+            font-size: 12px;
+            margin-bottom: 3px;
+          }
+          @include md {
+            font-size: 12px;
+            margin-bottom: 3px;
+          }
+          span {
+            color: #ff615e;
+          }
+        }
+        input {
+          background: #f5f7fa;
+          border-color: #f5f7fa;
+          border-radius: 6px;
+          &::placeholder {
+            font-size: 14px;
+            @include xsm {
+              font-size: 12px;
+            }
+            @include sm {
+              font-size: 12px;
+            }
+          }
+        }
+        select {
+          height: 40px;
+          background-color: #f5f7fa;
+          border-color: #f5f7fa;
+          border-radius: 6px;
+          background-image: url("../../assets/images/select-arrow.svg");
+          @include xsm {
+            font-size: 12px;
+          }
+          @include sm {
+            font-size: 12px;
+          }
+        }
+        textarea {
+          height: 85px;
+          background: #f5f7fa;
+          border-color: #f5f7fa;
+          border-radius: 6px;
+        }
+        .email-field{
+          display: flex;
+          justify-content: space-between;
+          label{
+            &:last-child {
+              color: $blueBytesinbits;
+              cursor: pointer;
+            }
+            span{
+              font-size: 12px;
+            }
+          }
+        }
+        .email-content{
+          font-size: 11.5px;
+          color: $redLight;
+        }
+        .radio-group{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 12px 0;
+          .radio-style{
+            display: flex;
+            align-items: flex-start;
+          }
+        }
+      }
+    }
+    .btn-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly !important;
+
+      .btn {
+        height: 45px;
+        line-height: 45px;
+        font-size: 16px;
+        font-weight: 600;
+        background: #f06421;
+        border-radius: 5px;
+        transition: 0.2s ease-in-out;
+        margin: 0 5px;
+        @include xsm {
+          height: 37px;
+          line-height: 37px;
+          font-size: 13px;
+        }
+        @include sm {
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+        }
+        @include md {
+          height: 40px;
+          line-height: 40px;
+          font-size: 14px;
+        }
+      }
+      .btn-demo {
+        width: 65%;
+
+        &:hover {
+          background: #e05613;
+        }
+      }
+      .btn-cancel {
+        width: 35%;
+        background: #51596c;
+        &:hover {
+          background: #70788c;
+        }
+      }
+    }
+  }
+}
+.errormsg{
+  color: #ff615e;
+  font-size: 12px;
+}
+.btn-next{
+  width: 135px;
+  height: 40px;
+  position: relative;
+  top: 2%;
+  left: 13%;
+  color: white;
+  background: $blue !important;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  background:$blue;
+  &:hover{
+    background: $bluehover !important;
+  }
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  .btn {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #f06421;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    margin: 0 5px;
+    @include xsm {
+      height: 37px;
+      line-height: 37px;
+      font-size: 13px;
+    }
+    @include sm {
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+    }
+    @include md {
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+    }
+  }
+  .btn-demo {
+    width: 65%;
+
+    &:hover {
+      background: #e05613;
+    }
+  }
+}

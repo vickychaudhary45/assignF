@@ -1,0 +1,65 @@
+@import "../../config/variables.scss";
+
+.btnMain {
+  height: 32px;
+  line-height: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0 15px;
+  @include laptop1024_1279 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+}
+.btn-team {
+  background: $blue;
+  margin-right: 10px;
+  &:hover {
+    background: $bluehover;
+  }
+}
+.btn-role {
+  background: $blue;
+  margin-right: 10px;
+  &:hover {
+    background: $bluehover;
+  }
+}
+.btn-save {
+  background: $blue;
+  margin-right: 10px;
+  &:hover {
+    background: $bluehover;
+  }
+}
+.btn-edit-user {
+  background: $blue;
+  margin-right: 10px;
+  &:hover {
+    background: $bluehover;
+  }
+}
+.btn-add-user {
+  background: $blue;
+  margin-right: 10px;
+  &:hover {
+    background: $bluehover;
+  }
+}
+.btn-learning {
+  background: $blue;
+  margin-right: 10px;
+  &:hover {
+    background: $bluehover;
+  }
+}
+.btn-cancel {
+  color: $gray51596c;
+  background: $grayDFE6EF;
+  &:hover {
+    background: $hoverbcc4ce;
+    color: $gray51596c;
+  }
+}

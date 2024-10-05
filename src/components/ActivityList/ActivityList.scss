@@ -1,0 +1,136 @@
+@import "../../config/variables.scss";
+
+.activity-list {
+  .heading {
+    color: $gray202020;
+    font-size: 18px;
+    margin-bottom: 10px;
+    @include laptop1024_1279 {
+      font-size: 16px;
+    }
+  }
+  ul {
+    background: $white;
+    box-shadow: 1px 1px 2px $white000d;
+    border-radius: 8px;
+    padding: 0 15px;
+    margin: 0;
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $whiteeaeef4;
+      padding: 7px 0;
+      margin-bottom: 0;
+      &:before {
+        display: none;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .user-detail {
+        max-width: 170px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        @include laptop1024_1279 {
+          margin: 0 10px 0 0;
+        }
+        figure {
+          max-width: 35px;
+          margin: 0 10px 0 0;
+          @include laptop1024_1279 {
+            max-width: 32px;
+          }
+        }
+        .user-name {
+          color: $gray2e2e2e;
+          font-size: 13px;
+          font-weight: $medium;
+          margin: 0;
+          @include laptop1024_1279 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .textblock {
+        max-width: 280px;
+        width: 100%;
+        flex: 1;
+        color: $gray51596c;
+        font-size: 13px;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-right: 15px;
+        overflow: hidden;
+      }
+      .attemptblock {
+        color: $gray707070;
+        font-size: 13px;
+        margin: 0;
+        max-width: 140px;
+        width: 100%;
+        flex: 1 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-right: 15px;
+        overflow: hidden;
+      }
+      .failblock {
+        max-width: 120px;
+        width: 100%;
+        white-space: nowrap;
+        height: 24px;
+        line-height: 24px;
+        color: $redLight;
+        background: $whitefceaea;
+        text-align: center;
+        padding: 0px 12px;
+        font-size: 12px;
+        border-radius: 30px;
+        margin: 0 0 0 30px;
+      }
+      .passblock {
+        max-width: 125px;
+        width: 100%;
+        white-space: nowrap;
+        height: 24px;
+        text-align: center;
+        padding: 0px 12px;
+        font-size: 12px;
+        border-radius: 30px;
+        margin: 0 0 0 30px;
+        line-height: 24px;
+        color: $green1ac48b;
+        background: $whitee5f9f2;
+      }
+      .Progressblock {
+        max-width: 140px;
+        width: 100%;
+        white-space: nowrap;
+        height: 24px;
+        text-align: center;
+        padding: 0px 12px;
+        font-size: 12px;
+        border-radius: 30px;
+        margin: 0 0 0 30px;
+        line-height: 24px;
+        color: $orangef16c2a;
+        background: $orangefff0e2;
+      }
+      .date {
+        max-width: 80px;
+        width: 100%;
+        color: $grayb7b7b7;
+        font-size: 12px;
+        text-align: right;
+        margin: 0;
+      }
+    }
+  }
+}

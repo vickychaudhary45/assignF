@@ -1,0 +1,143 @@
+@import "./mixin.scss";
+
+// ------------ color variable ------------ //
+$white: #fff;
+$whiteededed: #ededed;
+$whitee5f9f2: #e5f9f2;
+$whitee8e3ff: #e8e3ff;
+$whitefff3f5: #fff3f5;
+$whiteeaeef4: #eaeef4;
+$whitefceaea: #fceaea;
+$whitef5f7fa: #f5f7fa;
+$whitefe1ebfa: #e1ebfa;
+$whited8d8d8: #d8d8d8;
+$white000d: #0000000d;
+$white0029: #00000029;
+$white846e6e: #846e6e;
+$whiteF4F5F7: #f4f5f7;
+$whitef7f7: #f7f7f7;
+
+$grayddd: #dddddd;
+$gray6e6d7a: #6e6d7a;
+$gray62646a: #000000;
+$gray51596d: #51596d;
+$gray8a8c90: #8a8c90;
+$grayb7b7b7: #b7b7b7;
+$gray373737: #373737;
+$gray707070: #707070;
+$gray202020: #202020;
+$gray2e2e2e: #2e2e2e;
+$gray51596c: #51596c;
+$grayDFE6EF: #dfe6ef;
+$gray9e9ea6: #9e9ea6;
+$grayA2A2A2: #000000;
+$grayA2A2A2NEW: #51596c;
+$gray51596B: #51596b;
+$grayb0bed1: #b0bed1;
+$grayb51596C: #51596c;
+$grayb9e9e: #9e9e9e;
+$grayb1b1b1: #b1b1b1;
+$graybf3f3f4: #f3f3f4;
+$grayb2929: #292929;
+$grayb1212: #121212;
+$graydisable: #9aa0a8;
+$black: #000000;
+$redLight: #ff615e;
+
+$orange: #f06421;
+$bluekerala: #02afed;
+$bluekeralahover: #079dd3;
+$bluecloudsynergy: #02afed;
+$bluecloudsynergyhover: #079dd3;
+$blueapponix: #005691;
+$blueapponixhover: #648fb7;
+$blueeducba: #ef321f;
+$blueeducbahover: #fa9b8f;
+$blueitmentor: #fa092b;
+$blueitmentorhover: #044180;
+$bluevtechintegratedsolutions: #7f6a52;
+$bluevtechintegratedsolutionshover: #f7c26b;
+$bluecscorm: #e01d5b;
+$bluecscormhover: #c71c52;
+$bluecloudwizardconsulting: #1e507e;
+$bluecloudwizardconsultinghover: #103d68;
+$blueDsminfotech: #186dbc;
+$blueDsminfotechhover: #ee3538;
+$blueJayathiSoft: #ee3c3b;
+$blueJayathiSofthover: #57bc30;
+$bluerogersoft: #025b97;
+$bluerogersofthover: #3372a5;
+$bluesmeclabs: #292766;
+$bluesmeclabshover: #32479d;
+$blueaptech: #35363a;
+$blueaptechhover: #7b7d7f;
+$bluerpsconsulting: #0387cc;
+$bluerpsconsultinghover: #838385;
+$blueXploreitcorp: #8cbd3a;
+$blueXploreitcorphover: #fcc426;
+$blueBepractical: #bd2a26;
+$blueBepracticalhover: #2b258e;
+$blueTecholas: #fcb432;
+$blueTecholashover: #363636;
+$blueThelanofficial: #ea713a;
+$blueThelanofficialhover: #363636;
+$blueSkillplusacademy: #61b33b;
+$blueSkillplusacademyhover: #61afcf;
+$blueBytesinbits: #157ff6;
+$blueBytesinbitshover: #f3b503;
+$blueBraineryspottechnology: #204184;
+$blueBraineryspottechnologyhover: #59c252;
+$blueParinitha: #e26814;
+$blueParinithahover: #0f2540;
+$blueJetking: #e1212d;
+$blueJetkinghover: #eb6468;
+$blueLnteks: #c02126;
+$blueLntekshover: #d45c60;
+$blueIhaconsulting: #13547e;
+$blueIhaconsultinghover: #7c9bb4;
+$orangef16521: #f16521;
+$orangef16c2a: #f16c2a;
+$orangefff0e2: #fff0e2;
+$orangeFFAE28: #ffae28;
+$yellowLeCloud: #d38700;
+$blueTeamlease: #195fab;
+
+$green2cb36e: #2cb36e;
+$green1ac48b: #1ac48b;
+$green00BE7E: #00be7e;
+
+$yellowfdf0e2: #fdf0e2;
+$yellowdf9447: #df9447;
+
+$rede5424f: #e5424f;
+$redef9bcba: #f9bcba;
+
+$blue: #007cff;
+$blue1f2430: #1f2430;
+$blue0d2e83: #0d2e83;
+
+$pinkfdc8c6: #fdc8c6;
+$pinkfff3ea: #fff3ea;
+
+$fbBlue: #39579a;
+$twitterBlue: #059ff5;
+$linkedinBlue: #0076b9;
+$blue3cc1fe: #3cc1fe;
+$blueEAF3FD: #eaf3fd;
+
+// hover-color
+$hoverbcc4ce: #bcc4ce;
+$hoverefdfd4: #efdfd4;
+$hovere05613: #e05613;
+$bluehover: #0464ca;
+
+// --------- transition variable -------- //
+$transDefault: 0.2s ease-in-out;
+
+// --------- font variable -------- //
+// font-weight
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;

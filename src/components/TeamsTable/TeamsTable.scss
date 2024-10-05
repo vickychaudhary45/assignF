@@ -1,0 +1,263 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.MuiPaper-elevation1 {
+  box-shadow: inherit !important;
+}
+.team-table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .title {
+    font-size: 22px;
+    color: $gray202020;
+    font-weight: $medium;
+    margin: 0 auto 0 0;
+    @include laptop1024_1279 {
+      font-size: 20px;
+    }
+  }
+  .search-bar {
+    position: relative;
+    max-width: 230px;
+    width: 100%;
+    margin: 0 7px 0 0;
+    input {
+      height: 32px;
+      background: $white;
+      border-radius: 4px;
+      font-size: 11px;
+      color: $black;
+      padding: 10px 15px 10px 33px;
+      border-radius: 4px;
+      @include laptop1024_1279 {
+        height: 30px;
+      }
+    }
+    &::before { 
+      content: "\63";
+      position: absolute;
+      top: 50%;
+      left: 13px;
+      transform: translateY(-50%);
+      display: block;
+      color: $blue;
+      font-size: 14px;
+      font-family: "whiz-business";
+    }
+  }
+  .btn {
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin: 0;
+    background: $blue;
+    border-radius: 4px;
+    transition: 0.2s ease-in-out;
+    @include laptop1024_1279 {
+      height: 30px;
+      line-height: 30px;
+    }
+    &:hover {
+      background: $bluehover;
+    }
+    .icon-pluse {
+      color: $white;
+      font-size: 10px;
+      margin: 0 5px 0 0;
+    }
+    span {
+      font-size: 13px;
+      font-weight: $semibold;
+      color: $white;
+      margin: 0;
+      @include laptop1024_1279 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+.teams-table {
+  margin: 0;
+  .MuiTableCell-root {
+    font-family: "Poppins", sans-serif;
+    color: $grayA2A2A2;
+    font-size: 13px;
+    font-weight: $regular;
+    border: none;
+    padding: 10px 0;
+  }
+  .table-heading{
+    color: $white !important;
+  }
+  .MuiTableRow-root {
+    border-bottom: 1px solid $whitef5f7fa;
+  }
+  // <---- table-head ---->
+  .MuiTableHead-root {
+    border-bottom: 1px solid $whitef5f7fa;
+    background: transparent;
+    background-color: rgba(85,93,102,.8588235294117647);
+    th:first-child {
+      padding: 10px 0 10px 15px;
+      text-align: center;
+    }
+    th:last-child {
+      padding: 10px 15px 10px 0;
+      text-align: right;
+    }
+  }
+  // <---- table-body ---->
+  .MuiTableBody-root {
+    th:first-child {
+      padding: 10px 0 10px 30px;
+    }
+    td:last-child {
+      padding: 10px 15px 10px 0;
+    }
+    // members
+    .members {
+      font-size: 13px;
+      font-weight: 500;
+      span {
+        color: $blue;
+        padding: 4px 7px;
+        background: $blueEAF3FD;
+        border-radius: 6px;
+      }
+    }
+    // team
+    .team {
+      font-size: 14px;
+      font-weight: $medium;
+      color: $blue1f2430;
+      .title-link{
+        cursor: pointer;
+        color : #f16621d6 !important;
+        &:hover {
+          color: #f06421 !important;  
+          text-decoration: underline; 
+        }
+      }
+      @include laptop1024_1279 {
+        font-size: 13px;
+      }
+    }
+    // managers
+    .managers {
+      .profile {
+        display: flex;
+        align-items: center;
+        line-height: 1.4;
+        figure {
+          max-width: 30px;
+          margin-right: 10px;
+          margin: 0 10px 0 0;
+          img {
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .detail {
+          margin: 0;
+          .user-name {
+            font-size: 13px;
+            color: $blue1f2430;
+          }
+          .user-id {
+            font-size: 12px;
+            color: $grayA2A2A2;
+          }
+        }
+      }
+    }
+    // status
+    .status {
+      font-size: 12px;
+      span {
+        color: $gray51596c;
+        background: $grayDFE6EF;
+        padding: 3px 7px;
+        border-radius: 4px;
+        display: -webkit-inline-box;
+      }
+    }
+    .status.classonboarded {
+      span {
+        color: $green00BE7E;
+        background: $whitee5f9f2;
+      }
+    }
+    .onboarded {
+      font-size: 12px;
+      span {
+        color: $green00BE7E;
+        background: $whitee5f9f2;
+        padding: 3px 7px;
+        border-radius: 4px;
+        display: -webkit-inline-box;
+      }
+    }
+    .actions {
+      position: relative;
+      display: inline-block;
+      text-align: right;
+      font-size: 24px;
+      margin: 0;
+      cursor: pointer;
+      transition: $transDefault;
+      .icon-action {
+        display: flex;
+        justify-content: flex-end;
+        color: $grayA2A2A2;
+        transition: $transDefault;
+      }
+      &:hover .action-dropdown {
+        color: $white846e6e;
+        display: block;
+      }
+    }
+    .action-dropdown {
+      background: $white;
+      position: absolute;
+      right: 0;
+      top: 24px;
+      box-shadow: 2px 2px 10px $white0029;
+      color: $gray51596B;
+      display: none;
+      z-index: 999;
+      border-radius: 4px;
+      ul {
+        margin: 5px 0;
+        li {
+          padding: 5px 16px;
+          .link {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: $gray51596B;
+            white-space: nowrap;
+            .icon {
+              margin: 0 10px 0 0;
+            }
+            span {
+              margin: 0;
+            }
+          }
+          &:hover {
+            background: $whiteF4F5F7;
+            .link {
+              color: $blue1f2430;
+            }
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

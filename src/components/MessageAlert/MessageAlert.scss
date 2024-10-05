@@ -1,0 +1,41 @@
+@import "../../config/variables.scss";
+
+.message-alert {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  .MuiAlert-root {
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    padding: 10px 16px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .MuiAlert-standardSuccess {
+    background: $green00BE7E;
+  }
+  .MuiAlert-standardError {
+    background-color:  #E97337 ;
+  }
+  .MuiAlert-standardWarning {
+    background: $orangeFFAE28;
+  }
+  .MuiAlert-icon {
+    margin: 0 10px 0 0;
+    padding: 0;
+    color: $white !important;
+  }
+  .MuiAlert-message {
+    font-size: 13px;
+    font-weight: $medium;
+    color: $white;
+    margin: 0;
+    padding: 0;
+    span {
+      font-weight: $semibold;
+    }
+  }
+  .MuiAlert-action {
+    color: $white;
+  }
+}

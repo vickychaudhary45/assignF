@@ -1,0 +1,78 @@
+@import "../../config/variables.scss";
+
+.left-box {
+  max-width: 265px;
+  width: 100%;
+  background: $white;
+  box-shadow: 1px 1px 2px $white000d;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0 20px;
+  @include laptop1024_1279 {
+    padding: 0 15px;
+  }
+  span {
+    max-width: 90px;
+    width: 100%;
+    height: 45px;
+    font-size: 35px;
+    color: $blue1f2430;
+    display: block;
+    margin: 0;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 30px;
+    margin-bottom: 8px;
+    @include laptop1024_1279 {
+      font-size: 28px;
+    }
+  }
+  label {
+    margin-bottom: 0;
+    font-size: 14px;
+    @include laptop1024_1279 {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+  .user {
+    padding: 20px 0;
+    position: relative;
+    @include laptop1024_1279 {
+      padding: 15px 0;
+    }
+    span {
+      background: $orangefff0e2;
+    }
+    label {
+      color: $gray51596c;
+    }
+    &:before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      border: 1px dashed $grayddd;
+      padding: 0 15px;
+      @include laptop1024_1279 {
+        left: -14px;
+        padding: 0 14px;
+      }
+    }
+    &:last-child {
+      &::before {
+        border: none;
+      }
+    } 
+  }
+  a {
+    &:nth-child(2) span {
+      background: $whitee5f9f2;
+    }
+    &:nth-child(3) span {
+      background: $whitee8e3ff;
+    }
+  }
+}

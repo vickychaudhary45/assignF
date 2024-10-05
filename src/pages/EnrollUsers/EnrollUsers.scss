@@ -1,0 +1,148 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.content {
+  width: 100%;
+  .course-page {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 0 0;
+    @include laptop1024_1279 {
+      padding: 25px 0 0 0;
+    }
+    // details-block
+    .details-block {
+      position: relative;
+      .tabs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .Mui-selected {
+          border-radius: 10px;
+          background-color: #ffffff !important;
+          color : #f16521 !important;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -25px !important;
+          border : 1px dotted #f16521 !important;
+          border-bottom: none !important;
+          border-bottom-left-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+        }
+        .tab {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 50px;
+          min-width: 200px;
+          background-color: #fff0e2 ;
+          border-radius: 5px;
+          margin-right: 2px;
+          border: 1px dotted rgb(218, 110, 110);
+          box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 4px 0px inset;
+          img{
+            margin: 0;
+            margin-right: 12px;
+          }
+        }
+      }
+      .MuiTabs-indicator{
+        border-radius: 50%;
+        background-color: #ffffff;
+        height : 3px;
+      }
+      .tab-subscription{
+        .research-report{
+          height: 50px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          border-radius: 8px;
+          margin-top: 5px;
+          .MuiAccordion-root{
+            margin: 0;
+            .subs-heading-block{
+              // margin-right: 10px !important;
+              padding: 5px;
+              .subs-search-bar{
+                border : 1px dotted rgba(85, 93, 102, 0.8588235294) !important ; 
+              }
+            }
+          }
+        }
+      }
+      .tab-course{
+        .course-heading-block{
+          margin: 0 !important;
+          padding-right: 10px;
+          margin-bottom: -5px !important;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .course-search-bar{
+            border : 1px dotted rgba(85, 93, 102, 0.8588235294) !important ; 
+          }
+        }
+        .filter-block{
+          .input-box-group{
+            .select-box{
+              max-width: 390px !important;
+            }
+          }
+          .btn-group{
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 7px;
+          }
+        }
+      }
+      .tab-sandbox{
+        .sandbox-container{
+          width: 100%;
+          display: flex;
+          justify-content: center; 
+          align-items: center; 
+          height: 67vh;
+          background: white;
+          margin-top: 50px;
+          .sandbox-box{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .tab-learning{
+        .course-heading-block{
+          margin: 0 !important;
+          padding-right: 10px;
+          border-radius: 8px;
+          height: 50px;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          .search-bar{
+            border : 1px dotted rgba(85, 93, 102, 0.8588235294) !important ; 
+          }
+        }
+      }
+      .adduser-button-box{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 10px;
+        padding : 5px;
+        input{
+          border-radius: 5px;
+          height: 40px;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+

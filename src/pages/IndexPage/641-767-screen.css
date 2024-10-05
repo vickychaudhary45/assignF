@@ -1,0 +1,205 @@
+/*2. Large Mobile responsive css 641px to 767px
+------------------------------------------------------------------------------*/
+@media (min-width:641px) and (max-width:767px){
+	h1{font-size: 28px; margin-bottom: 10px;}
+	h2{font-size: 24px; margin-bottom: 10px;}
+	h3{font-size: 22px; margin-bottom: 10px;}
+	h4{font-size: 20px; margin-bottom: 10px;}
+	h5{font-size: 18px; margin-bottom: 10px;}
+	h6{font-size: 16px; margin-bottom: 10px;}
+
+	p{margin-bottom: 15px;}
+
+	ul{margin: 15px 0 15px 15px;}
+	ul li{font-size: 13px;}
+
+	ol{margin: 15px 0 15px 15px;}
+	ol li{font-size: 13px;}
+
+	/* header */
+	header .header-left .logo{max-width: 220px;}
+	header .header-right .login-group .link-contact-sales{min-width: 125px; height: 30px; line-height: 30px; font-size: 13px;}
+
+	/* footer */
+	footer{padding: 35px 0 20px;}
+	footer a{font-size: 13px;}
+	footer .footer-top{flex-direction: column; margin-bottom: 30px;}
+	footer .footer-top .footer-left{min-width: 100%; display: flex; align-items: center; order: 2;}
+	footer .footer-top .footer-left .logo{margin: 0 15px 0 0;}
+	footer .footer-top .footer-left p{margin: 3px 0 0 0;}
+	footer .footer-top .footer-left .social-links{margin: 0 0 0 15px;}
+	footer .footer-top .footer-left .social-links .link{font-size: 15px; margin: 0 15px 0 0;}
+	footer .footer-top .footer-right .block .title{font-size: 14px; margin-bottom: 10px;}
+	footer .footer-top .footer-right{max-width: 100%; margin: 0 0 25px 0;}
+	footer .footer-top .footer-right .block.join-slack{max-width: 25%;}
+	footer .footer-top .footer-right .block.join-slack .block-title a{font-size: 14px;}
+	footer .footer-top .footer-right .block.join-slack .block-title figure{max-width: 26px;}
+	footer .footer-bottom{padding-top: 20px;}
+	footer .footer-bottom p{font-size: 11px;}
+
+	/* all modal */
+	.modal .modal-header{padding: 20px 20px 0;}
+	.modal .modal-header .title-block .title{font-size: 18px;}
+
+	.modal .icon-close.icon-font-cross,
+	.modal .icon-close.icon-font-cross-bold{top: 20px; right: 20px; width: 22px; height: 22px; font-size: 8px;}
+
+	.modal .modal-content{padding: 15px 20px 20px;}
+	.modal .modal-content .box-borderd{padding: 15px;}
+
+	.modal .modal-footer{padding: 13px 20px;}
+	.modal .modal-footer button{min-width: 120px; height: 35px; line-height: 35px; font-size: 13px;}
+
+	/* modal-download-brochure */
+	.modal.modal-download-brochure .modal-content .box-borderd{padding: 20px;}
+	.modal-download-brochure .input-box{margin-bottom: 20px;}
+	.modal-download-brochure .input-box label{font-size: 13px;}
+	.modal-download-brochure .input-box input{font-size: 13px;}
+	.modal-download-brochure .modal-footer button.download i{font-size: 20px; margin-left: 8px;}
+
+	/* discussMore */
+	.discussMore{border-radius: 10px; padding: 15px 30px;}
+	.discussMore .para{font-size: 18px; margin: 0 10px 0 0;}
+	.discussMore .btn-demo{height: 40px; line-height: 40px; font-size: 14px; padding: 0 20px;}
+
+	/* --------- index-page ---------- */
+	/* ------------------------------------- */
+	/* banner */
+	.banner-block .banner{height: auto; padding: 40px 0 0 0;}
+	.banner-block .banner .container .caption{max-width: 280px; margin: 20px 0 30px 0;}
+	.banner-block .banner .container .caption h1{font-size: 24px; line-height: 1.5; margin-bottom: 10px;}
+	.banner-block .banner .container .caption .sub-title{font-size: 16px; line-height: 1.5; margin-bottom: 15px;}
+	.banner-block .banner .container .caption .btn-group .btn{min-width: 150px; height: 37px; line-height: 37px; font-size: 13px;}
+	.banner-block .banner .container .caption .btn-group .overview i{font-size: 20px;}
+	.banner-block .banner .container .img-block{max-width: 370px; margin: 0 0 0 10px;}
+
+	/* upskilled-sec */
+	.upskilled-sec{padding: 35px 0;}
+	.upskilled-sec .title-sec{font-size: 17px; margin-bottom: 22px;}
+	.upskilled-sec .companies-group{grid-gap: 15px; grid-template-columns: repeat(4, 1fr);}
+	.upskilled-sec .companies-group .company{border-radius: 6px; padding: 20px 20px;}	
+
+	/* deliver-sec */
+	.deliver-sec{padding: 35px 0;}
+	.deliver-sec .caption-block h2{font-size: 20px; margin-bottom: 10px;}
+	.deliver-sec .upskill-box-group{grid-gap: 20px; grid-template-columns: repeat(2, 1fr);}
+	.deliver-sec .upskill-box-group .upskill-box .img-box{margin-bottom: 15px;}
+	.deliver-sec .upskill-box-group .upskill-box .img-box .img-icon{max-width: 55px;}
+	.deliver-sec .upskill-box-group .upskill-box .caption{max-width: 90%;}
+	.deliver-sec .upskill-box-group .upskill-box .caption h3{font-size: 17px; line-height: 24px; margin-bottom: 7px;}
+	.deliver-sec .upskill-box-group .upskill-box .caption p{line-height: 22px;}
+
+	/* globel-employee */
+	.globel-employee{padding: 35px 0 40px 0;}
+	.globel-employee h2{font-size: 20px; line-height: 30px; margin-bottom: 20px;}
+	.globel-employee .block{padding: 30px 25px;}
+	.globel-employee .block .globel-right .play-icon{max-width: 50px;}
+	.globel-employee .newHires-block{padding: 18px 0;}
+	.globel-employee .newHires-block .caption{font-size: 20px;}
+	.globel-employee .newHires-block .btn-touch{height: 40px; line-height: 40px; font-size: 14px; border-radius: 6px; padding: 0 25px;}
+
+	/* sandboxes-sec */
+	.sandboxes-sec{padding: 30px 0 0 0;}
+	.sandboxes-sec .caption-block p{font-size: 20px; line-height: 32px;}
+	.sandboxes-sec .caption-block h2{font-size: 26px; line-height: 38px;}
+
+	/* why-do-sec */
+	.why-do-sec{padding: 35px 0;}
+	.why-do-sec h2{font-size: 22px; line-height: 34px; margin-bottom: 25px;}
+	.why-do-sec .learners{grid-gap: 20px; grid-template-columns: repeat(3, 1fr);}
+	.why-do-sec .learners .learner-box{border-radius: 8px;}
+	.why-do-sec .learners .learner-box .play-icon{max-width: 50px;}
+	.why-do-sec .learners .learner-box .user-block{bottom: 15px; left: 15px;}
+	.why-do-sec .learners .learner-box .user-block .name{font-size: 17px; line-height: 18px;}
+    .why-do-sec .learners .learner-box .user-block .desi{font-size: 13px; line-height: 18px;}
+
+	/* three-blocks */
+	.three-blocks{margin: 35px 0;}
+	.three-blocks h2{font-size: 22px; line-height: 34px;}
+	.three-blocks .block-group{flex-direction: column; margin-bottom: 35px;}
+	.three-blocks .block-group .block{max-width: 100%; padding: 30px 40px; margin: 0 auto 10px;}
+	.three-blocks .block-group .block:last-child{margin-bottom: 0;}
+	.three-blocks .block-group .block figure{max-width: 60px; margin-bottom: 17px;}
+	.three-blocks .block-group .block .title{font-size: 18px; margin-bottom: 15px;}
+	.three-blocks .block-group .block p{max-width: 500px; width: 100%;}
+	.three-blocks ul li{font-size: 14px; padding-left: 30px;}
+	.three-blocks ul li:before{top: 0; width: 20px; height: 20px;}
+
+	/* explore-category */
+	.explore-category{margin-bottom: 40px;}
+	.explore-category .block-heading{margin-bottom: 15px;}
+	.explore-category .block-heading h2{font-size: 20px;}
+	.explore-category .block-heading a{font-size: 15px;}
+	.explore-category .block-heading a i{font-size: 14px;}
+
+	.explore-category .block-group .block{padding: 25px 10px;}
+	.explore-category .block-group .block figure{max-width: 30px;}
+	.explore-category .block-group .block span{font-size: 14px; line-height: 24px; text-align: center; margin-left: 0; margin-bottom: 10px;}	
+
+	/* contactUs-block */
+	.contactUs-block{margin-bottom: 40px;}
+	.contactUs-block .inner-block{padding: 20px 25px;}
+	.contactUs-block .inner-block .left-block{width: 100%; font-size: 21px; line-height: 32px;}
+	.contactUs-block .inner-block .left-block span{font-size: 16px; line-height: 26px;}
+	.contactUs-block .inner-block .right-block{flex-wrap: wrap; justify-content: center;}
+	.contactUs-block .inner-block .right-block .btn-contact{height: 40px; line-height: 40px; font-size: 15px; border-radius: 6px; padding: 0 30px; margin: 0;}
+	.contactUs-block .inner-block .right-block .mail-block{margin: 5px 0 0 0;}
+	.contactUs-block .inner-block .right-block .mail-block span{font-size: 14px; line-height: 24px;}
+	.contactUs-block .inner-block .right-block .mail-block .mail-id{font-size: 16px; line-height: 20px;}
+
+	/* feature-block */
+	.feature-block{padding: 45px 0;}
+	.feature-block .features-block figure {max-width: 300px;}
+	.feature-block .features-block:nth-child(even) .caption{margin: 0 30px 0 20px;}
+	.feature-block .features-block .caption{max-width: 230px;}
+	.feature-block .features-block .caption h4{font-size: 22px; line-height: 1.3;}
+	.feature-block .features-block .caption h4 strong{font-size: 40px;}
+
+	/* brands-block */
+	.brands-block{padding: 30px;}
+	.brands-block .title{font-size: 19px; margin-bottom: 25px;}
+	.brands-block .brand-logoes{grid-template-columns: repeat(4, 1fr);}
+	.brands-block .brand-logoes figure{max-width: 120px;}
+
+	/* faq */
+	.faq-block{padding: 30px 0;}
+	.faq-block .title{font-size: 21px; margin-bottom: 25px;}
+	.faq-block .tab_wrapper .accordian-block .item{margin: 0 0 8px;}
+	.faq-block .tab_wrapper .accordian-block .item-head{padding: 15px 35px 15px 20px;}
+	.faq-block .tab_wrapper .accordian-block .item-head span{font-size: 14px;}
+	.faq-block .tab_wrapper .accordian-block .item-head samp{right: 15px; width: 28px; height: 28px;}
+	.faq-block .tab_wrapper .accordian-block .item-content{padding: 15px 20px;}
+
+	/* cloud-learning */
+	.cloud-learning{padding: 35px 0;}
+	.cloud-learning .block{flex-direction: column; padding: 30px;}
+	.cloud-learning .block .left{text-align: center; max-width: 570px; margin-bottom: 20px;}
+	.cloud-learning .block .left h6{font-size: 22px; margin-bottom: 20px;}
+	.cloud-learning .block form{padding: 22px; margin: 0 auto;}
+	.cloud-learning .block form .form-title{font-size: 17px; margin-bottom: 15px;}
+	.cloud-learning .block form .input-box{max-width: calc(100% / 2 - 5px); margin: 0 0 10px;}
+	.cloud-learning .block form .input-box input{height: 40px; font-size: 13px;}
+	.cloud-learning .block form .textarea{height: 90px; margin-bottom: 15px;}
+	.cloud-learning .block form .textarea textarea{font-size: 13px;}
+	.cloud-learning .block form .btn-submit{height: 42px; line-height: 42px; font-size: 15px;}
+	.cloud-learning .block .left .user{margin: 0 auto;}
+	.cloud-learning .block .left .user figure{margin: 0 auto;}
+
+	/* --------- request-demo-page ---------- */
+	/* ------------------------------------- */
+	.request-content .request-group .left {display: none;}
+
+	.request-content .request-group .right{width: 100%;}
+	.request-content .request-group .right .box .logo{display: block; margin: auto auto 35px auto;}
+	.request-content .request-group .right .box .head{font-size: 20px; margin-bottom: 15px;}
+	.request-content .request-group .right .box .head span{font-size: 13px;}
+	.request-content .request-group .right form{padding: 20px 30px;}
+	.request-content .request-group .right form .input-box-group .input-box label{font-size: 12px; margin-bottom: 3px;}
+	.request-content .request-group .right form .input-box-group .input-box input::placeholder {font-size: 12px;}
+	.request-content .request-group .right form .input-box-group .input-box select{font-size: 12px;}
+	.request-content .request-group .right form .btn-demo{height: 40px; line-height: 40px; font-size: 14px;}
+
+	.request-content .request-group .right .thank-you-block figure{max-width: 40px;}
+	.request-content .request-group .right .thank-you-block .caption-group .title{font-size: 20px; margin-bottom: 18px;}
+	.request-content .request-group .right .thank-you-block .caption-group p{margin-bottom: 25px;}
+}

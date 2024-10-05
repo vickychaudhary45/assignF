@@ -1,0 +1,19 @@
+.tab-content {
+  .jodit-text-editor {
+    max-width: auto;
+    margin: 0px 0px 10px;
+    .jodit-workplace {
+      .jodit-wysiwyg {
+        ul, ol {
+          margin: 0px 10px 5px;
+        }
+        li::before {
+          left: -10px;
+        }
+        p {
+          margin: 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+@import "../../config/variables.scss";
+
+.assign-role-block {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid $grayddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  .head-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $whitef5f7fa;
+    padding: 10px 10px 10px 15px;
+    border-radius: 6px 6px 0 0;
+    .title {
+      font-size: 13px;
+      font-weight: $medium;
+      color: $gray51596c;
+      margin: 0;
+      span {
+        color: $redLight;
+      }
+    }
+    .title-left{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      .selectAll {
+        font-size: 13px;
+        font-weight: $medium;
+        color: $gray51596c;
+        margin: 0;   
+      }
+    }
+    .add-role {
+      font-size: 12px;
+      font-weight: $medium;
+      color: $blue;
+      margin: 0;
+    }
+  }
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 15px 0 15px;
+    .checkbox-style {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      color: $gray51596c;
+      padding: 0 0 0 20px;
+      margin-bottom: 20px;
+      margin-right: 15px;
+      .checkmark {
+        top: 2px;
+      }
+    }
+    .css-1aj41gs.Mui-expanded::before {
+      opacity: 1 !important; /* When expanded */
+    }
+  }
+  .loader-div{
+    display: flex;
+    align-self: center;
+    height: 20vh;
+    span{
+      display: flex;
+      align-items: center;
+    }
+  }
+}

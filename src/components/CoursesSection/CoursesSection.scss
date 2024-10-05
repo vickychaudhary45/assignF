@@ -1,0 +1,217 @@
+@import "../../config/variables.scss";
+
+.three-blocks {
+  margin: -100px 0 55px;
+  @include xsm {
+    margin: 20px 0 10px;
+  }
+  @include xsm2 {
+    margin: 20px 0;
+  }
+  @include sm {
+    margin: 30px 0;
+  }
+  @include md {
+    margin: -90px 0 35px;
+  }
+  .container-big {
+    max-width: 1220px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 935px;
+    width: 100%;
+    margin: 0 auto;
+    @include xsm {
+      flex-direction: column;
+    }
+    @include xsm2 {
+      flex-direction: row;
+    }
+    li {
+      color: $grayb1212;
+      max-width: calc(100% / 2 - 5px);
+      width: 100%;
+      font-size: 18px;
+      line-height: 1.5;
+      padding-left: 55px;
+      margin: 0 0 15px;
+      @include xsm {
+        max-width: 100%;
+        font-size: 13px;
+        padding-left: 30px;
+      }
+      @include xsm2 {
+        max-width: calc(100% / 2 - 5px);
+        font-size: 13px;
+        padding-left: 30px;
+        margin-bottom: 10px;
+      }
+      @include sm {
+        font-size: 14px;
+        padding-left: 30px;
+      }
+      @include md {
+        font-size: 15px;
+        padding-left: 38px;
+      }
+      @include screen1024_1120 {
+        font-size: 17px;
+        padding-left: 45px;
+      }
+      &:before {
+        top: -3px;
+        background: url("../../assets/images/green-tick.svg") no-repeat center;
+        background-size: cover;
+        width: 34px;
+        height: 34px;
+        @include xsm {
+          top: 0;
+          width: 19px;
+          height: 19px;
+        }
+        @include xsm2 {
+          top: 0;
+          width: 19px;
+          height: 19px;
+        }
+        @include sm {
+          top: 0;
+          width: 20px;
+          height: 20px;
+        }
+        @include md {
+          top: -2px;
+          width: 25px;
+          height: 25px;
+        }
+        @include screen1024_1120 {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .block-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    @include xsm {
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+    @include sm {
+      flex-direction: column;
+      margin-bottom: 35px;
+    }
+    @include md {
+      margin-bottom: 40px;
+    }
+    .block {
+      max-width: calc(100% / 3 - 12px);
+      width: 100%;
+      text-align: center;
+      padding: 30px 42px 50px 42px;
+      border-radius: 8px;
+      margin: 0;
+      @include xsm {
+        max-width: 100%;
+        padding: 25px;
+        margin: 0 auto 10px;
+      }
+      @include sm {
+        max-width: 100%;
+        padding: 30px 40px;
+        margin: 0 auto 10px;
+      }
+      @include md {
+        max-width: calc(100% / 3 - 8px);
+        padding: 25px 20px 30px 20px;
+      }
+      @include screen1024_1120 {
+        max-width: calc(100% / 3 - 10px);
+        padding: 30px 30px 40px 35px;
+      }
+      @include screen1024_1240 {
+        padding: 30px 35px 45px 35px;
+      }
+      &:first-child {
+        background: #d0dfff;
+      }
+      &:nth-child(2) {
+        background: #ffdbde;
+      }
+      &:nth-child(3) {
+        background: #fff4d8;
+      }
+      &:last-child {
+        @include xsm {
+          margin-bottom: 0;
+        }
+        @include sm {
+          margin-bottom: 0;
+        }
+      }
+      figure {
+        background: $white;
+        max-width: 80px;
+        width: 100%;
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        @include xsm {
+          max-width: 55px;
+          margin-bottom: 15px;
+        }
+        @include sm {
+          max-width: 60px;
+          margin-bottom: 17px;
+        }
+        @include md {
+          max-width: 60px;
+        }
+        @include screen1024_1120 {
+          max-width: 75px;
+        }
+      }
+      .title {
+        color: $grayb1212;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        @include xsm {
+          font-size: 17px;
+          margin-bottom: 10px;
+        }
+        @include sm {
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+        @include md {
+          font-size: 19px;
+          margin-bottom: 15px;
+        }
+        @include screen1024_1120 {
+          font-size: 21px;
+          margin-bottom: 17px;
+        }
+      }
+      p {
+        color: $gray51596c;
+        font-size: 14px;
+        margin-bottom: 0;
+        @include xsm {
+          max-width: 500px;
+          width: 100%;
+          line-height: 1.8;
+        }
+        @include sm {
+          max-width: 500px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

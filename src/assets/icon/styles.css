@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "whiz-business";
+  src:url("fonts/whiz-business.eot");
+  src:url("fonts/whiz-business.eot?#iefix") format("embedded-opentype"),
+    url("fonts/whiz-business.woff") format("woff"),
+    url("fonts/whiz-business.ttf") format("truetype"),
+    url("fonts/whiz-business.svg#whiz-business") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "whiz-business" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "whiz-business" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-notification:before {
+  content: "\61";
+}
+.icon-dropdown:before {
+  content: "\62";
+}
+.icon-search:before {
+  content: "\63";
+}
+.icon-exclamation:before {
+  content: "\67";
+}
+.icon-assign-team:before {
+  content: "\70";
+}
+.icon-bundle-card:before {
+  content: "\71";
+}
+.icon-calendar:before {
+  content: "\72";
+}
+.icon-delete:before {
+  content: "\74";
+}
+.icon-edit:before {
+  content: "\75";
+}
+.icon-eye-view:before {
+  content: "\76";
+}
+.icon-right-nxt:before {
+  content: "\77";
+}
+.icon-logout:before {
+  content: "\7a";
+}
+.icon-line-chart:before {
+  content: "\41";
+}
+.icon-left-nxt:before {
+  content: "\42";
+}
+.icon-lab:before {
+  content: "\43";
+}
+.icon-key:before {
+  content: "\44";
+}
+.icon-filter:before {
+  content: "\46";
+}
+.icon-pluse:before {
+  content: "\47";
+}
+.icon-play:before {
+  content: "\78";
+}
+.icon-question:before {
+  content: "\79";
+}
+.icon-action:before {
+  content: "\48";
+}
+.icon-cross:before {
+  content: "\6f";
+}
+.icon-quiz:before {
+  content: "\73";
+}
+.icon-assign:before {
+  content: "\49";
+}
+.icon-humburger:before {
+  content: "\4a";
+}
+.icon-select:before {
+  content: "\4b";
+}
+.icon-assign-icon-team:before {
+  content: "\4c";
+}
+.icon-duplicate:before {
+  content: "\4d";
+}
+.icon-analytics-nav:before {
+  content: "\64";
+}
+.icon-billing-nav:before {
+  content: "\65";
+}
+.icon-courses-nav:before {
+  content: "\66";
+}
+.icon-dashboard-nav:before {
+  content: "\68";
+}
+.icon-learning-nav:before {
+  content: "\69";
+}
+.icon-teams-nav:before {
+  content: "\6d";
+}
+.icon-inbox-nav:before {
+  content: "\6e";
+}
+.icon-help-nav:before {
+  content: "\45";
+}
+.icon-users-nav:before {
+  content: "\4e";
+}
+.icon-training-nav:before {
+  content: "\4f";
+}
+.icon-setting-nav:before {
+  content: "\6a";
+}
+.icon-role-nav:before {
+  content: "\6b";
+}
+.icon-gallery-icon:before {
+  content: "\6c";
+}
+.icon-send-icon:before {
+  content: "\50";
+}
+.icon-arrow-right:before {
+  content: "\51";
+}
+.icon-tweeter:before {
+  content: "\52";
+}
+.icon-facebook:before {
+  content: "\53";
+}
+.icon-linkedin:before {
+  content: "\54";
+}
+.icon-upload-down:before {
+  content: "\55";
+}
+.icon-hamburger:before {
+  content: "\56";
+}
+.icon-calendar-1:before {
+  content: "\57";
+}
+.icon-photo-pictures-streamline:before {
+  content: "\59";
+}
+.icon-id-card:before {
+  content: "\5a";
+}
+.icon-browser-full:before {
+  content: "\30";
+}
+.icon-line-chart-1:before {
+  content: "\31";
+}
+.icon-list-alt:before {
+  content: "\32";
+}
+.icon-bar-chart:before {
+  content: "\33";
+}
+.icon-area-chart:before {
+  content: "\34";
+}
+.icon-stack:before {
+  content: "\35";
+}
+.icon-play-video:before {
+  content: "\36";
+}
+.icon-arrow-graph-up-right:before {
+  content: "\37";
+}
+.icon-file-text-o:before {
+  content: "\38";
+}
+.icon-learning-path:before {
+  content: "\39";
+}
+.icon-ios-close-outline:before {
+  content: "\58";
+}
+.icon-lock:before {
+  content: "\21";
+}
+.icon-call-support:before {
+  content: "\22";
+}
+.icon-x-twitter:before {
+  content: "\23";
+}

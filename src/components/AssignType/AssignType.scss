@@ -1,0 +1,36 @@
+@import "../../config/variables.scss";
+
+.assign-type {
+  margin-bottom: 15px;
+  .title {
+    font-size: 13px;
+    color: $gray51596c;
+    font-weight: $medium;
+    margin-bottom: 3px;
+    span {
+      color: $redLight;
+    }
+  }
+  .checkbox-group {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    .checkbox-style {
+      max-width: 160px;
+      width: 100%;
+      padding: 6px 0 7px 36px;
+      border: 1px solid $grayddd;
+      border-radius: 6px;
+      font-size: 13px;
+      color: $gray51596c;
+      margin: 0 10px 0 0;
+      .checkmark {
+        top: 8px;
+        left: 14px;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}

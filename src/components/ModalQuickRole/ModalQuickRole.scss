@@ -1,0 +1,184 @@
+@import "../../config/variables.scss";
+
+.modal-quick-role {
+  .MuiBackdrop-root {
+    background-color: rgba(31, 36, 48, 0.7) !important;
+  }
+  .MuiPaper-rounded {
+    max-width: 530px;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #1f24300d;
+  }
+  //   modal
+  .modal {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    position: relative;
+    // modal-head
+    .modal-head {
+      display: flex;
+      align-items: center;
+      padding: 0 0 15px 0;
+      position: relative;
+      &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        left: -18px;
+        background: $grayddd;
+        padding: 0 18px;
+      }
+      figure {
+        max-width: 80px;
+        width: 100%;
+        margin: 0 10px 0 0;
+      }
+      .caption {
+        margin: 0;
+        span {
+          font-size: 13px;
+          color: $gray62646a;
+        }
+        .title {
+          font-size: 16px;
+          font-weight: $medium;
+          color: $gray2e2e2e;
+          line-height: 1.4;
+          margin: 0;
+        }
+      }
+      .Component-root-1 {
+        padding: 0;
+      }
+      .Component-root-4 {
+        padding: 0;
+      }
+      .MuiTypography-h6 {
+        font-family: "Poppins", sans-serif;
+        font-size: 22px;
+        font-weight: $medium;
+        line-height: 1.3;
+        color: $gray2e2e2e;
+      }
+      .MuiDialogTitle-root {
+        padding: 0;
+      }
+    }
+    // modal-container
+    .modal-container {
+      padding: 15px 0 0 0;
+      .MuiTypography-body1 {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        line-height: 1.7;
+        color: $gray51596c;
+        overflow: hidden;
+      }
+      form {
+        .input-box-group {
+          .input-box {
+            width: 100%;
+            margin: 0 0 20px 0;
+            label {
+              font-size: 13px;
+              color: $gray51596c;
+              font-weight: $medium;
+              margin: 0 0 3px;
+            }
+            input {
+              font-family: "Poppins", sans-serif;
+              max-width: 230px;
+              width: 100%;
+              height: 35px;
+              font-size: 13px;
+              border-radius: 6px;
+              &::placeholder {
+                color: $grayb7b7b7;
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+      //   assign-role-block componet
+      .assign-role-block {
+        .head-block {
+          .add-role {
+            color: $grayb51596C;
+          }
+        }
+        .checkbox-group {
+          .checkbox-style {
+            width: 50%;
+          }
+        }
+      }
+    }
+    .MuiSvgIcon-root {
+      font-size: 1.1rem;
+    }
+    .MuiIconButton-root {
+      top: -2px;
+      right: 0px;
+      padding: 4px;
+      background: $graybf3f3f4;
+      transition: $transDefault;
+      &:hover {
+        background: $grayb9e9e;
+        color: $white;
+      }
+    }
+    .assign-type {
+      margin-bottom: 15px;
+    }
+    .manager-block {
+      margin-bottom: 15px;
+      .list-group {
+        .list-item {
+          .profile-img {
+            max-width: 100%;
+            .profile-title {
+              span {
+                font-size: 10px;
+                color: $grayA2A2A2;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-group {
+      .btn {
+        height: 35px;
+        line-height: 35px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: $semibold;
+        padding: 0 15px;
+        @include laptop1024_1279 {
+          height: 30px;
+          line-height: 30px;
+          font-size: 12px;
+        }
+      }
+      .btn-edit {
+        background: $blue;
+        &:hover {
+          background: $bluehover;
+        }
+      }
+      .btn-cancel {
+        background: $grayDFE6EF;
+        color: $gray51596c;
+        margin-right: 10px;
+        &:hover {
+          background: $hoverbcc4ce;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../config/variables.scss";
+
+.content {
+  width: 100%;
+  .user-page {
+    position: relative;
+    width: 100%;
+    padding: 30px 0 0 0;
+    @include laptop1024_1279 {
+      padding: 25px 0 0 0;
+    }
+    .user-heading-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      .title {
+        font-size: 22px;
+        color: $gray202020;
+        font-weight: $medium;
+        margin: 0 auto 0 0;
+        @include laptop1024_1279 {
+          font-size: 20px;
+        }
+      }
+      .search-bar {
+        position: relative;
+        max-width: 230px;
+        width: 100%;
+        margin: 0 7px 0 0;
+        input {
+          height: 32px;
+          background: $white;
+          border-radius: 4px;
+          font-size: 11px;
+          padding: 10px 15px 10px 33px;
+          border-radius: 4px;
+          @include laptop1024_1279 {
+            height: 30px;
+          }
+        }
+        &::before { 
+          content: "\63";
+          position: absolute;
+          top: 50%;
+          left: 13px;
+          transform: translateY(-50%);
+          display: block;
+          color: $blue;
+          font-size: 14px;
+          font-family: "whiz-business";
+        }
+      }
+      .btn-user {
+        height: 32px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        margin: 0;
+        background: $blue;
+        border-radius: 4px;
+        transition: $transDefault;
+        @include laptop1024_1279 {
+          height: 30px;
+          line-height: 30px;
+        }
+        .csv-link{
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 13px;
+            font-weight: $semibold;
+            color: $white;
+            margin: 0;
+            @include laptop1024_1279 {
+              font-size: 12px;
+            }
+          }
+          &:hover {
+            background: $bluehover;
+          }
+          .icon-download{
+            color: white;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+    .details-block {
+      .table-content {
+        background: $white;
+        box-shadow: 1px 1px 2px $white000d !important;
+        border-radius: 8px;
+        overflow-x: inherit;
+        .loader-div{
+          display: flex;
+          align-self: center;
+          height: 30vh;
+          span{
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+      .MuiPagination-root {
+        .MuiPagination-ul {
+          justify-content: flex-end;
+          padding: 12px 8px;
+        }
+        li {
+          &:before {
+            display: none;
+          }
+        }
+        .MuiPaginationItem-root {
+          height: 26px;
+          min-width: 26px;
+          color: $grayb51596C;
+          margin: 0 3px 0 0;
+        }
+        .MuiPaginationItem-page.Mui-selected {
+          background-color: $grayDFE6EF;
+        }
+      }
+    }
+  }
+}

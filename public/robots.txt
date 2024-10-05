@@ -1,0 +1,18 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+Disallow: /visa/request-demo-page/
+Disallow: /master/request-demo-page/
+Disallow: /forget-password
+Disallow: /request-demo-page/trail
+Disallow: /request-for-a-demo
+Disallow: /request-demo-page?utm_source=header
+Disallow: /request-demo-page/header
+Disallow: /request-demo-page/discuss
+Disallow: /request-demo-page/banner
+Disallow: /request-demo-page/header
+Disallow: /request-demo-page/banner
+Disallow: /request-demo-page/trail
+Disallow: /request-for-a-demo
+Disallow: /request-demo-page/customize
+Sitemap: https://business.whizlabs.com/sitemap.xml

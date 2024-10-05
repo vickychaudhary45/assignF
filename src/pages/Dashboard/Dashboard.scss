@@ -1,0 +1,71 @@
+@import "../../config/variables.scss";
+
+.content {
+  width: 100%;
+  .dashboard-page {
+    position: relative;
+    padding: 35px 0 0 0;
+    text-transform:capitalize;
+    @include laptop1024_1279 {
+      padding: 25px 0 0 0;
+    }
+    .title {
+      font-size: 22px;
+      color: $gray51596c;
+      font-weight: $medium;
+      margin-bottom: 10px;
+      @include laptop1024_1279 {
+        font-size: 20px;
+      }
+      span {
+        color: $gray202020;
+      }
+    }
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+      .left-column {
+        width: 100%;
+        margin: 0;
+        .users-group {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          .right-box {
+            width: 100%;
+            margin: 0 0 0 15px;
+            .info-group {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 15px;
+            }
+            .report-group {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background: $white;
+              box-shadow: 1px 1px 2px $white000d;
+              border-radius: 8px;
+              opacity: 1;
+              padding: 20px 15px;
+            }
+          }
+        }
+        .view-block {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 15px;
+          margin-bottom: 18px;
+          @include laptop1024_1279 {
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .right-column {
+        max-width: 265px;
+        width: 100%;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+}

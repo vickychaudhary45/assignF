@@ -1,0 +1,80 @@
+@import "../../config/variables.scss";
+
+.globel-employee {
+	background-image: url("https://media.whizlabs.com/b2b/homepage/bg-learners.webp"); 
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 65px 0 90px;
+	h2 {
+		font-size: 28px;
+		line-height: 40px;
+		font-weight: 400;
+		text-align: center;
+		color: #1F2430;
+		margin-bottom: 30px;
+		strong {
+			font-weight: 700;
+		}
+	}
+	.block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: #fff;
+		border-radius: 6px;
+		padding: 50px 60px 50px 65px;
+		.globel-map {
+			max-width: 625px;
+			width: 100%;
+			margin: 0 20px 0 0;
+		}
+		.globel-right {
+			position: relative;
+			max-width: 445px;
+			width: 100%;
+			margin: 0;
+			.play-icon {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50% , -50%);
+				max-width: 63px;
+				width: 100%;
+				transition: 0.2s ease-in-out;
+				z-index: 2;
+				cursor: pointer;
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
+	.newHires-block {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #695FC9;
+		padding: 22px 0;
+		.caption {
+			font-size: 26px;
+			font-weight: 400;
+			color: #fff;
+			margin: 0 25px 0 0;
+		}
+		.btn-touch {
+			height: 45px;
+			line-height: 45px;
+			font-size: 16px;
+			font-weight: 500;
+			color: #1F2430;
+			background: #fff;
+			border-radius: 8px;
+			padding: 0 33px;
+			margin: 0;
+			&:hover {
+				background: #eee;
+			}
+		}
+	}
+}

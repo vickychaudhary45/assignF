@@ -1,0 +1,324 @@
+@import "../../config/variables.scss";
+
+.footer {
+  background: $white;
+  padding: 60px 0 25px;
+  @include xsm {
+    padding: 30px 0 20px;
+  }
+  @include sm {
+    padding: 35px 0 20px;
+  }
+  @include md {
+    padding: 35px 0 20px;
+  }
+  a {
+    color: $gray51596c;
+    @include xsm {
+      font-size: 13px;
+    }
+    @include sm {
+      font-size: 13px;
+    }
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    @include xsm {
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+    @include xsm2 {
+      margin-bottom: 20px;
+    }
+    @include sm {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    @include md {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    .footer-left {
+      min-width: 190px;
+      margin: 0;
+      @include xsm {
+        min-width: 100%;
+        display: grid;
+        align-items: center;
+        order: 2;
+      }
+      @include sm {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        order: 2;
+      }
+      @include md {
+        min-width: 100%;
+        display: flex;
+        align-items: center;
+        order: 2;
+      }
+      .logo {
+        display: block;
+        max-width: 157px;
+        width: 100%;
+        margin: 0 0 15px;
+        @include xsm {
+          display: none;
+          margin: 0 15px 0 0;
+        }
+        @include sm {
+          margin: 0 15px 0 0;
+        }
+        @include md {
+          margin: 0 15px 0 0;
+        }
+      }
+      p {
+        color: $gray51596c;
+        font-size: 12px;
+        line-height: 1;
+        @include xsm {
+          margin: 10px 0 10px 0;
+          order: 3;
+        }
+        @include sm {
+          margin: 3px 0 0 0;
+        }
+        @include md {
+          margin: 3px 0 0 0;
+        }
+      }      
+    }
+    .footer-right {
+      display: flex;
+      justify-content: space-between;
+      max-width: 930px;
+      width: 100%;
+      margin: 0 0 0 30px;
+      @include xsm {
+        max-width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+      }
+      @include xsm2 {
+        max-width: 100%;
+      }
+      @include sm {
+        max-width: 100%;
+        margin: 0 0 25px 0;
+      }
+      @include md {
+        max-width: 100%;
+        margin: 0 0 25px 0;
+      }
+      .block {
+        margin: 0 30px 0 0;
+        @include xsm {
+          max-width: calc(100% / 2 - 7px);
+          width: 100%;
+          margin: 0 0 20px 0;
+        }
+        @include xsm2 {
+          max-width: 50%;
+          width: 100%;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        .title {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 15px;
+          line-height: 1;
+          @include xsm {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          @include sm {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+        ul {
+          margin: 0;
+          li {
+            font-size: 14px;
+            color: $gray51596c;
+            list-style: none;
+            line-height: 1;
+            padding: 0;
+            margin: 0;
+            &:before {
+              display: none;
+            }
+            a {
+              display: block;
+              padding: 6px 0;
+              line-height: 1.3;
+              &:hover {
+                color: $orange;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+      .block.join-slack {
+        @include xsm {
+          margin: 0 0 20px 0;
+        }
+        @include xsm2 {
+          max-width: 50%;
+          width: 100%;
+        }
+        @include sm {
+          max-width: 25%;
+        }
+        @include md {
+          max-width: 25%;
+        }
+        .title {
+          color: $grayb2929;
+        }
+        .block-title {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          figure {
+            max-width: 32px;
+            width: 100%;
+            margin: 0 10px 0 0;
+            @include xsm {
+              max-width: 26px;
+            }
+            @include sm {
+              max-width: 26px;
+            }
+            @include md {
+              max-width: 28px;
+            }
+          }
+          a {
+            color: $grayb2929;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+            text-decoration: none;
+            @include xsm {
+              font-size: 14px;
+            }
+            @include sm {
+              font-size: 14px;
+            }
+          }
+        }
+        p {
+          max-width: 250px;
+          width: 100%;
+          color: #595959;
+          font-size: 13px;
+          font-weight: 400;
+          margin: 0;
+          @include xsm {
+            line-height: 1.7;
+          }
+          a {
+            color: #eb3f30;
+            font-weight: 600;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom{
+    .app-block{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0 20px 0;
+      @include xsm{
+        display: grid;
+        padding: 0 0 15px 0;
+      }
+      .left-app{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        span{
+          font-size: 16px;
+          color: #51596A;
+        }
+        .icon-wp{
+          display: inline-flex;
+          margin: 0 2px;
+        }
+        .icon-phone{
+          display: inline-flex;
+          margin: 0 5px;
+        }
+        .phone-nub{
+          font-size: 16px;
+          font-weight: 500;
+          color: #1F2430;
+        }
+      }
+      .right-app{
+        display: flex;
+        margin: 0 0 0 20px;
+        gap: 12px;
+        .playstore{
+            img{
+              margin: 15px 0px 0px 0px;
+            }
+          }
+        }
+        .appstore{
+          img{
+            margin: 15px 0px 0px 0px;
+          }
+        }
+      }
+      .footer-copyright{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #DFE6EF;
+        padding: 15px 0px;
+        @include xsm{
+          display: grid; 
+        }
+        p{
+          font-size: 13px;
+          color: #51596A;
+          margin: 0;
+        }
+        .social-icon{
+          display: flex;
+          align-items: center;
+          margin: 0 0 0 20px;
+          @include xsm{
+            margin: 10px 0 0 60px;
+          }
+          .icon{
+            display: inline-flex;
+            margin: 0 0 0 18px;
+            svg{
+              width: 30px;
+              height: 18px;
+              &:hover path{
+                fill: $orange;
+              } 
+            }
+          }
+        }
+      }
+    }
+}

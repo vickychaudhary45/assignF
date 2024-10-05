@@ -1,0 +1,142 @@
+@import "../../config/variables.scss";
+@import "../../config/mixin.scss";
+
+.MuiPaper-elevation1 {
+  box-shadow: inherit !important;
+}
+.role-table {
+  margin: 0;
+  .MuiTableCell-root {
+    font-family: "Poppins", sans-serif;
+    color: $grayA2A2A2;
+    font-size: 13px;
+    font-weight: $regular;
+    border: none;
+    line-height: 1;
+  }
+  .table-heading{
+    color: $white !important;
+  }
+  .MuiTableRow-root {
+    border-bottom: 1px solid $whitef5f7fa;
+  }
+  // <---- table-head ---->
+  .MuiTableHead-root {
+    border-bottom: 1px solid $whitef5f7fa;
+    background: transparent;
+    background-color: rgba(85,93,102,.8588235294117647);
+    th:first-child {
+      padding: 9px 0 9px 15px;
+    }
+    th:last-child {
+      padding: 9px 15px 9px 0;
+      text-align: right;
+    }
+    // date
+    .date {
+      span {
+        position: relative;
+        padding: 0 17px 0 0;
+        &:after {
+          content: "\46";
+          font-family: "whiz-business" !important;
+          position: absolute;
+          right: 0;
+          color: $white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  // <---- table-body ---->
+  .MuiTableBody-root {
+    th:first-child {
+      padding: 9px 0 9px 15px;
+    }
+    td:last-child {
+      padding: 9px 15px 9px 0;
+    }
+    // roles-name
+    .roles-name {
+      min-width: 350px;
+      width: 100%;
+      font-size: 14px;
+      color: $blue1f2430;
+      font-weight: $medium;
+    }
+    // date
+    .date {
+      font-size: 13px;
+      color: $grayb51596C;
+    }
+    // members
+    .members {
+      font-size: 13px;
+      color: $blue1f2430;
+      font-weight: $medium;
+    }
+    // actions
+    .actions {
+      position: relative;
+      display: inline-block;
+      text-align: right;
+      font-size: 24px;
+      margin: 0;
+      cursor: pointer;
+      transition: $transDefault;
+      .icon-action {
+        display: flex;
+        justify-content: flex-end;
+        color: $grayA2A2A2;
+        transition: $transDefault;
+      }
+      &:hover .action-dropdown {
+        color: $white846e6e;
+        display: block;
+      }
+    }
+    .action-dropdown {
+      background: $white;
+      position: absolute;
+      right: 0;
+      top: 24px;
+      box-shadow: 2px 2px 10px $white0029;
+      color: $gray51596B;
+      display: none;
+      z-index: 999;
+      border-radius: 4px;
+      ul {
+        padding: 5px 0;
+        margin: 0;
+        li {
+          padding: 5px 16px;
+          .link {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: $gray51596B;
+            white-space: nowrap;
+            .icon {
+              margin: 0 10px 0 0;
+            }
+            span {
+              margin: 0;
+            }
+          }
+          &:hover {
+            background: $whiteF4F5F7;
+            .link {
+              color: $blue1f2430;
+            }
+          }
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+    .no-result-tbl-cell {
+      text-align: center;
+    }
+  }
+}

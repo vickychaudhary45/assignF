@@ -1,0 +1,56 @@
+@import "../../config/variables.scss";
+
+.content {
+  width: 100%;
+  .edit-role-page {
+    position: relative;
+    .details-block {
+      padding: 15px;
+      background: $white;
+      box-shadow: 1px 1px 2px $white000d;
+      border-radius: 8px;
+      .role-content {
+        form {
+          .input-box-group {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .input-box {
+              width: 100%;
+              margin: 0 0 20px 0;
+              label {
+                font-size: 13px;
+                color: $gray51596c;
+                font-weight: $medium;
+                margin: 0 0 3px;
+                span {
+                  color: $redLight;
+                }
+              }
+              input {
+                font-family: "Poppins", sans-serif;
+                max-width: 330px;
+                width: 100%;
+                height: 35px;
+                font-size: 13px;
+                border-radius: 6px;
+                &::placeholder {
+                  color: $grayb7b7b7;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+        .assign-role-block {
+          .head-block {
+            .add-role {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Table of Contents
+-----------------------------------------------------------------------------
+1. Mobile
+2. Large Mobile
+3. iPad
+4. Desktop
+5. Large Desktop
+6. Other
+*/
+
+@import url("1-640-screen.css");
+
+@import url("641-767-screen.css");
+
+@import url("768-1023-screen.css");
+
+@import url("1024-1240-screen.css");
+
+@import url("1024-1119-screen.css");
+
+@import url("1120-1240-screen.css");
+
+/* @import url("1241-1329-screen.css"); */
+
+/* 6. Other media-query
+------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1023px){
+	/* header */
+	header .container{position: relative;}
+	header .header-left{position: absolute; display: flex; align-items: center; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0;	}
+
+	header .header-right .navbar{display: none;}
+	header .header-left .btn-dropdown,
+	header .header-right .nav,
+	header .header-right .login-group .link-signin{display: none;}
+
+	header .header-right .user-login-block{padding-left: 0; margin-left: 20px;}
+
+	/* header course dropdown */
+	.dropdown-menu.desktop ul{height: 100vh;}
+	.mobile-nav.open{transform: translateX(0) !important;}
+	.mobile-nav .dropdown-menu{display: block !important; position: unset !important; opacity: 1; visibility: visible; width: 100%;max-width: 350px;}
+	.mobile-nav .dropdown-menu .drawer span{margin: 0;padding: 0;}
+	.mobile-nav .dropdown-menu ul{padding: 0 !important; transition: .3s all ease-in-out;margin: 0; overflow-x: hidden;}
+	.mobile-nav .dropdown-menu ul li a{line-height: 22px; padding: 6px 20px; text-decoration: none; font-weight: 400;}
+	.mobile-nav .dropdown-menu ul:first-child{height: 100vh;}
+	.mobile-nav .dropdown-menu .new_li{padding: 20px 20px 15px; color: #000; font-size: 16px; font-weight: 600; line-height: 1;}
+	.mobile-nav .dropdown-menu .submenu{height: 100vh;}
+	.mobile-nav .dropdown-menu .submenu a{color: #51596C; font-size: 15px; font-weight: 500; line-height: 25px;}
+	.mobile-nav .dropdown-menu .submenu.detail a{line-height: 18px; color: #51596C; font-weight: 400; font-size: 13px; padding: 6px 20px; display: block;}
+	.mobile-nav .dropdown-menu .submenu.detail .title{border-bottom: 1px solid #e7e7e7; padding: 10px 0 2px !important; margin: 0 20px 5px; text-transform: uppercase; font-size: 12px;color: #959595; letter-spacing: 1px;}
+	.mobile-nav .dropdown-menu .back-btn{padding: 15px 20px; display: flex; align-items: center;background: #F5F7FA; color: #1F2430; font-size: 16px;}
+	.mobile-nav .dropdown-menu .back-btn i{transform: rotate(-180deg); margin: 0 10px 0 0;}
+	
+	/*  mobile-mode */
+	.mobile-mode{display: flex;}
+}
+
+@media only screen and (max-width: 767px){
+	/* header */
+	header{height: 55px;}
+}
+
+@media only screen and (max-width: 640px){
+	/* responsive tab with accordion */
+	ul.resp-tabs-list{display: none;}
+    .resp-accordion-closed{display: none !important;}
+
+	/* tabs-accordian */
+	.tab_wrapper .tab_list{display: none;}
+	.tab_wrapper .content_wrapper{padding: 0; border-radius: 8px; overflow: hidden;}
+	.tab_wrapper .content_wrapper .resp-accordion{display: flex; flex-direction: row-reverse; padding: 10px 0;}
+	.tab_wrapper .content_wrapper .resp-accordion samp{display: flex; margin: 0;}
+
+	/* modal */
+	.modal form input{height: 40px;}
+
+	/* modal account */
+	.modal-account .modal-inner{align-items: flex-start;}
+	.modal-account .modal-container{max-width: 100%; max-height: 100vh; border-radius: 0;}
+	.modal-account .modal-header{padding: 20px 20px 0;}
+	.modal-account .modal-header .title-block .title{font-size: 16px;}
+	.modal-account .modal-content{padding: 20px 20px 15px;}
+	.modal-account .sepretor{margin-bottom: 15px;}
+	.modal-account form .input-box-group{margin-bottom: 10px;}
+	.modal-account form .input-box-group .input-box input{height: 40px; font-size: 13px;}
+	.modal-account form button{height: 40px; line-height: 40px; font-size: 14px;}
+	.modal-account .modal-footer{padding: 15px 20px;}
+	.modal-account .modal-footer .have-an-account{font-size: 13px;}
+
+	/* modal pass-saved */
+	.modal-account.pass-saved form .input-box input{font-size: 20px;}
+	.modal-account.pass-saved .user-block figure{width: 60px; height: 60px;}
+	.modal-account.pass-saved .forgot-password{margin-bottom: 10px;}
+
+	/* modal pass-reset */
+	.modal-account.pass-reset .modal-header .title-block .title{margin-bottom: 5px;}
+	.modal-account.pass-reset .modal-header .title-block .title-note{font-size: 13px;}
+}

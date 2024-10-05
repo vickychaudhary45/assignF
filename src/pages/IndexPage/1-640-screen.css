@@ -1,0 +1,297 @@
+/* 1. Mobile responsive css 640px
+------------------------------------------------------------------------------*/
+@media (min-width:1px) and (max-width:640px){
+	h1{font-size: 24px; margin-bottom: 10px;}
+	h2{font-size: 22px; margin-bottom: 10px;}
+	h3{font-size: 20px; margin-bottom: 10px;}
+	h4{font-size: 18px; margin-bottom: 10px;}
+	h5{font-size: 16px; margin-bottom: 10px;}
+	h6{font-size: 16px; margin-bottom: 10px;}
+
+	p{font-size: 13px; margin-bottom: 15px;}
+
+	ul{margin: 15px 0 15px 15px;}
+	ul li{font-size: 13px;}
+
+	ol{margin: 15px 0 15px 15px;}
+	ol li{font-size: 13px;}
+
+	/* header */
+	header .header-left .logo{width: 210px;}
+	header .header-right .login-group .link-contact-sales{display: none;}
+
+	/* footer */
+	footer{padding: 30px 0 20px;}
+	footer a{font-size: 13px;}
+
+	footer .footer-top{flex-direction: column; flex-wrap: wrap; margin-bottom: 25px;}
+	footer .footer-top .footer-left{min-width: 100%; display: flex; align-items: center; order: 2;}
+	footer .footer-top .footer-left .logo{display: none; margin: 0 15px 0 0;}
+	footer .footer-top .footer-left p{margin: 3px 0 0 0;}
+	footer .footer-top .footer-left .social-links{margin: 0 0 0 15px;}
+	footer .footer-top .footer-left .social-links .link{font-size: 15px; margin: 0 15px 0 0;}
+
+	footer .footer-top .footer-right{max-width: 100%; margin: 0; flex-wrap: wrap;}
+	footer .footer-top .footer-right .block{max-width: calc(100% / 2 - 7px); width: 100%; margin: 0 0 20px 0;}
+	footer .footer-top .footer-right .block .title{font-size: 14px; margin-bottom: 10px;}
+	footer .footer-top .footer-right .block.join-slack{margin: 0 0 20px 0;}
+	footer .footer-top .footer-right .block.join-slack .block-title a{font-size: 14px;}
+	footer .footer-top .footer-right .block.join-slack .block-title figure{max-width: 26px;}
+	footer .footer-top .footer-right .block.join-slack p{line-height: 1.7;}
+	footer .footer-bottom{padding-top: 20px;}
+	footer .footer-bottom p{font-size: 11px;}
+
+	/* error msg */
+	.input-box .error-msg{font-size: 11.5px;}
+
+	/* all modal */
+	.modal .modal-header{padding: 15px 15px 0;}
+	.modal .modal-header .title-block .title{font-size: 16px; margin-bottom: 2px;}
+	.modal .modal-header .title-block .title-note{font-size: 13px;}
+	.modal .icon-close.icon-font-cross,
+	.modal .icon-close.icon-font-cross-bold{top: 15px; right: 15px; width: 22px; height: 22px; font-size: 8px;}
+	
+	.modal .modal-content{padding: 10px 15px 15px;}
+	.modal .modal-content .box-borderd{padding: 15px;}
+
+	.modal .modal-footer{padding: 10px 15px;}
+	.modal .modal-footer button{min-width: 120px; height: 35px; line-height: 35px; font-size: 13px;}
+
+	/* modal-download-brochure */
+	.modal-download-brochure .input-box{margin-bottom: 15px;}
+	.modal-download-brochure .input-box label{font-size: 13px;}
+	.modal-download-brochure .input-box input{font-size: 13px;}
+	.modal-download-brochure .modal-footer .btn{padding: 0 15px;}
+	.modal-download-brochure .modal-footer button.download i{font-size: 18px; margin: 0 0 -1px 5px;}
+
+	/* discussMore */
+	.discussMore{flex-wrap: wrap; justify-content: center; border-radius: 8px; padding: 15px 30px;}
+	.discussMore .para{font-size: 17px; line-height: 1.5; text-align: center; margin: 0 10px 10px;}
+	.discussMore .btn-demo{height: 35px; line-height: 35px; font-size: 13px; border-radius: 6px; padding: 0 15px;}
+
+	/* --------- index-page ---------- */
+	/* ------------------------------------- */
+	/* banner */
+	.banner-block .banner{height: auto; padding: 25px 0 0;}
+	.banner-block .banner .container{flex-direction: column;}
+	.banner-block .banner .container .caption{max-width: 450px; text-align: center; margin: auto}
+	.banner-block .banner .container .caption h1{font-size: 20px; line-height: 1.3; margin-bottom: 10px;}
+	.banner-block .banner .container .caption .sub-title{font-size: 14px; line-height: 1.5; margin-bottom: 10px;}
+	.banner-block .banner .container .caption .btn-group{flex-direction: column;}
+	.banner-block .banner .container .caption .btn-group .btn{min-width: 150px; height: 35px; line-height: 35px; font-size: 13px; padding: 0 20px; margin: 0 0 7px 0;}
+	.banner-block .banner .container .caption .btn-group .overview i{font-size: 18px;}
+	.banner-block .banner .container .img-block{max-width: 320px; margin: 15px auto 0;}
+	.banner-block .banner .container .shape{bottom: -5px; transform: translateX(50%); right: 35%; opacity: 0.5;}
+
+	/* upskilled-sec */
+	.upskilled-sec{padding: 30px 0;}
+	.upskilled-sec .title-sec{font-size: 16px; margin-bottom: 20px;}
+	.upskilled-sec .companies-group{grid-gap: 10px; grid-template-columns: repeat(3, 1fr);}
+	.upskilled-sec .companies-group .company{border-radius: 5px; padding: 15px 15px;}	
+
+	/* deliver-sec */
+	.deliver-sec{padding: 30px 0;}
+	.deliver-sec .caption-block h2{font-size: 16px; margin-bottom: 10px;}
+	.deliver-sec .caption-block p{font-size: 14px;}
+	.deliver-sec .upskill-box-group{grid-gap: 25px; grid-template-columns: repeat(1, 1fr); margin-bottom: 30px;}
+	.deliver-sec .upskill-box-group .upskill-box .img-box{margin-bottom: 15px;}
+	.deliver-sec .upskill-box-group .upskill-box .img-box .img-icon{max-width: 55px;}
+	.deliver-sec .upskill-box-group .upskill-box .caption{max-width: 90%;}
+	.deliver-sec .upskill-box-group .upskill-box .caption h3{font-size: 16px; line-height: 18px; margin-bottom: 5px;}
+	.deliver-sec .upskill-box-group .upskill-box .caption p{font-size: 13px; line-height: 20px;}
+
+	/* globel-employee */
+	.globel-employee{padding: 30px 0 35px 0;}
+	.globel-employee h2{font-size: 16px; line-height: 26px; margin-bottom: 20px;}
+	.globel-employee .block{flex-wrap: wrap; justify-content: center; padding: 20px;}
+	.globel-employee .block .globel-map{margin: 0 10px 10px;}
+	.globel-employee .block .globel-right{margin: 0 10px 10px;}
+	.globel-employee .block .globel-right .play-icon{max-width: 45px;}
+	.globel-employee .newHires-block{flex-wrap: wrap; padding: 15px 0;}
+	.globel-employee .newHires-block .caption{font-size: 18px; margin: 10px;}
+	.globel-employee .newHires-block .btn-touch{height: 35px; line-height: 35px; font-size: 13px; border-radius: 6px; padding: 0 18px;}
+
+	/* sandboxes-sec */
+	.sandboxes-sec{padding: 25px 0;}
+	.sandboxes-sec .caption-block p{font-size: 16px; line-height: 26px; margin-bottom: 5px;}
+	.sandboxes-sec .caption-block h2{font-size: 18px; line-height: 27px;}
+	.sandboxes-sec .sandboxes-right{display: none;}
+
+	/* why-do-sec */
+	.why-do-sec{padding: 30px 0;}
+	.why-do-sec h2{font-size: 19px; line-height: 32px; margin-bottom: 22px;}
+	.why-do-sec .learners{grid-gap: 10px; grid-template-columns: repeat(2, 1fr);}
+	.why-do-sec .learners .learner-box{border-radius: 8px;}
+	.why-do-sec .learners .learner-box .play-icon{max-width: 42px;}
+	.why-do-sec .learners .learner-box .user-block{bottom: 10px; left: 10px;}
+	.why-do-sec .learners .learner-box .user-block .name{font-size: 15px; line-height: 15px; margin: 0 0 2px;}
+    .why-do-sec .learners .learner-box .user-block .desi{font-size: 13px; line-height: 18px;}
+    .why-do-sec .learners .learner-box .gradient{height: 120px;}
+
+	/* three-blocks */
+	.three-blocks{margin: 20px 0 10px;}
+	.three-blocks h2{font-size: 19px; line-height: 32px; margin-bottom: 15px;}
+	.three-blocks .block-group{flex-direction: column; margin-bottom: 25px;}
+	.three-blocks .block-group .block{max-width: 100%; padding: 25px; margin: 0 auto 10px;}
+	.three-blocks .block-group .block:last-child{margin-bottom: 0;}
+	.three-blocks .block-group .block figure{max-width: 55px; margin-bottom: 15px;}
+	.three-blocks .block-group .block .title{font-size: 17px; margin-bottom: 10px;}
+	.three-blocks .block-group .block p{max-width: 500px; width: 100%; line-height: 1.8;}
+	.three-blocks ul{flex-direction: column;}
+	.three-blocks ul li{max-width: 100%; font-size: 14px; padding-left: 30px;}
+	.three-blocks ul li:before{top: 0; width: 19px; height: 19px;}
+
+	/* explore-category */
+	.explore-category{padding: 20px 0 0; margin: 0 0 25px;}
+	.explore-category .block-heading{flex-direction: column; margin-bottom: 15px;}
+	.explore-category .block-heading h2{font-size: 19px;}
+	.explore-category .block-heading a{font-size: 15px;}
+	.explore-category .block-heading a i{font-size: 14px;}
+
+	.explore-category .block-group{grid-template-columns: repeat(1, 1fr);}
+	.explore-category .block-group .block{flex-direction: column; border-right: 1px solid #A2A2A2; padding: 15px 10px;}
+	.explore-category .block-group .block:nth-last-child(-n+3){border-bottom: none;}
+	.explore-category .block-group .block:last-child{border-bottom: 1px solid #A2A2A2;}
+	.explore-category .block-group .block figure{max-width: 30px;}
+	.explore-category .block-group .block span{font-size: 14px; text-align: center; line-height: 1.2; margin: 5px 0;}
+
+	/* contactUs-block */
+	.contactUs-block{margin-bottom: 40px;}
+	.contactUs-block .inner-block{flex-wrap: wrap; border-radius: 8px; padding: 20px 25px;}
+	.contactUs-block .inner-block .left-block{width: 100%; text-align: center; font-size: 18px; line-height: 28px; margin-bottom: 10px;}
+	.contactUs-block .inner-block .left-block span{font-size: 15px; line-height: 24px;}
+	.contactUs-block .inner-block .right-block{max-width: 300px; width: 100%; flex-wrap: wrap; justify-content: center; margin: 0 auto;}
+	.contactUs-block .inner-block .right-block .btn-contact{height: 35px; line-height: 35px; font-size: 13px; border-radius: 6px; padding: 0 25px; margin: 0;}
+	.contactUs-block .inner-block .right-block .mail-block{margin: 5px 0 0 0;}
+	.contactUs-block .inner-block .right-block .mail-block span{font-size: 14px; line-height: 24px;}
+	.contactUs-block .inner-block .right-block .mail-block .mail-id{font-size: 15px; line-height: 18px;}
+
+	/* feature-block */
+	.feature-block{width: 100%; padding: 30px 0 20px; border-bottom: 1px solid #ddd;}
+	.feature-block .features-block{flex-direction: column; margin-bottom: 30px;}
+	.feature-block .features-block figure {max-width: 260px; margin-bottom: 20px;}
+	.feature-block .features-block:nth-child(even) .caption{order: 2; margin: 0 30px 0 20px;}
+	.feature-block .features-block .caption{max-width: 230px; text-align: center; margin: 0;}
+	.feature-block .features-block .caption h4{font-size: 18px; line-height: 1.3;}
+	.feature-block .features-block .caption h4 strong{font-size: 28px;}		
+
+	/* brands-block */
+	.brands-block{padding: 25px 0;}
+	.brands-block .title{font-size: 17px; margin-bottom: 25px;}
+	.brands-block .brand-logoes{grid-template-columns: repeat(2, 1fr);}
+	.brands-block .brand-logoes figure{max-width: 120px;}
+
+	/* faq */
+	.faq-block{padding: 20px 0;}
+	.faq-block .title{font-size: 19px; margin-bottom: 20px;} 
+	.faq-block .tab_wrapper .accordian-block .item{margin: 0 0 5px;}
+	.faq-block .tab_wrapper .accordian-block .item-head{padding: 13px 35px 13px 15px;}
+	.faq-block .tab_wrapper .accordian-block .item-head span{font-size: 13px;}
+	.faq-block .tab_wrapper .accordian-block .item-head samp{right: 15px; width: 26px; height: 26px;}
+	.faq-block .tab_wrapper .accordian-block .item-content{padding: 10px 15px;}
+	.faq-block .tab_wrapper .accordian-block .item-content p{font-size: 13px; line-height: 1.7;}
+
+	/* cloud-learning */
+	.cloud-learning{padding: 25px 0;}
+	.cloud-learning .block{flex-direction: column; padding: 20px;}
+	.cloud-learning .block .left{text-align: center; max-width: 570px; margin-bottom: 20px;}
+	.cloud-learning .block .left h6{font-size: 19px; margin-bottom: 15px;}
+	.cloud-learning .block .left p{line-height: 1.8; margin-bottom: 10px;}
+	.cloud-learning .block form{padding: 15px; margin: 0 auto;}
+	.cloud-learning .block form .form-title{font-size: 15px; margin-bottom: 10px;}
+	.cloud-learning .block form .input-box-group{flex-direction: column;}
+	.cloud-learning .block form .input-box{max-width: 100%; margin: 0 0 10px;}
+	.cloud-learning .block form .input-box input{height: 40px; font-size: 13px; padding: 10px;}
+	.cloud-learning .block form .textarea{height: 90px; margin-bottom: 10px;}
+	.cloud-learning .block form .textarea textarea{font-size: 13px;}
+	.cloud-learning .block form .btn-submit{height: 40px; line-height: 40px; font-size: 14px;}
+	.cloud-learning .block .left .user{margin: 0 auto;}
+	.cloud-learning .block .left .user span{margin-bottom: 10px;}
+	.cloud-learning .block .left .user figure{margin: 0 auto;}
+
+	/* --------- request-demo-page ---------- */
+	/* ------------------------------------- */
+	.request-content .request-group .left {display: none;}
+
+	.request-content .request-group .right{width: 100%;}
+	.request-content .request-group .right .box .logo{max-width: 240px; display: block; margin: auto auto 25px auto;}
+	.request-content .request-group .right .box .head{font-size: 18px; margin-bottom: 15px;}
+	.request-content .request-group .right .box .head span{font-size: 13px;}
+	.request-content .request-group .right form{max-width: 450px; padding: 15px;}
+	.request-content .request-group .right form .input-box-group .input-box label{font-size: 12px; margin-bottom: 3px;}
+	.request-content .request-group .right form .input-box-group .input-box input::placeholder {font-size: 12px;}
+	.request-content .request-group .right form .input-box-group .input-box select{font-size: 12px;}
+	.request-content .request-group .right form .btn-demo{height: 37px; line-height: 37px; font-size: 13px;}
+
+	.request-content .request-group .right .thank-you-block figure{max-width: 40px;}
+	.request-content .request-group .right .thank-you-block .caption-group .title{font-size: 19px; margin-bottom: 16px;}
+	.request-content .request-group .right .thank-you-block .caption-group p{margin-bottom: 22px;}	
+
+	.request-content .request-group .right form .btn-group .btn{height: 40px; line-height: 40px; font-size: 14px;}
+
+}
+
+@media (min-width:480px) and (max-width:640px){
+	/* header */
+	header .header-right .login-group .link-contact-sales{display: block; min-width: 110px; height: 30px; line-height: 30px; font-size: 12px; padding: 0 10px;}
+
+	/* footer */
+	footer .footer-top{margin-bottom: 20px;}
+	footer .footer-top .footer-right{max-width: 100%;}
+	footer .footer-top .footer-right .block,
+	footer .footer-top .footer-right .block.join-slack{max-width: 50%; width: 100%;}
+
+	/* --------- index-page ---------- */
+	/* ------------------------------------- */
+	/* banner-block */
+	.banner-block .banner .container .caption .btn-group{flex-direction: row; }
+	.banner-block .banner .container .caption .btn-group .btn{margin: 0 7px 7px 0;}
+	.banner-block .banner .container .caption .btn-group .overview{margin: 0 0 7px 0;}
+
+	/* upskilled-sec */
+	.upskilled-sec .companies-group{grid-template-columns: repeat(4, 1fr);}
+
+	/* deliver-sec */
+	.deliver-sec .upskill-box-group{grid-template-columns: repeat(2, 1fr); grid-gap: 15px;}
+
+	/* .why-do-sec */
+	.why-do-sec .learners{grid-gap: 20px;}
+	.why-do-sec .learners .learner-box .user-block{bottom: 15px; left: 15px;}
+
+	/* feature-block */
+	.feature-block{padding: 35px 0px 40px; border-bottom: 0;}
+	.feature-block .features-block{flex-direction: row; margin-bottom: 0;}
+	.feature-block .features-block figure {max-width: 240px; margin-bottom: 0;}
+	.feature-block .features-block:nth-child(even) .caption{order: unset;}
+	.feature-block .features-block .caption{max-width: 210px; text-align: left; margin: 0 0 0 30px;}
+	.feature-block .features-block .caption h4{font-size: 20px; line-height: 1.3;}
+	.feature-block .features-block .caption h4 strong{font-size: 32px;}
+
+	/* explore-category */
+	.explore-category{padding: 0; margin-bottom: 25px;}
+	.explore-category .block-heading{flex-direction: row; justify-content: space-between;}
+	
+	.explore-category .block-group{grid-template-columns: repeat(2, 1fr);}
+	.explore-category .block-group .block figure{max-width: 24px;}
+	.explore-category .block-group .block span{font-size: 14px;}
+	.explore-category .block-group .block:nth-child(even){border-bottom: 1px solid #707070;}	
+
+	/* three-blocks */
+	.three-blocks{margin: 20px 0;}
+	.three-blocks ul{flex-direction: row;}
+	.three-blocks ul li{max-width: calc(100% / 2 - 5px); font-size: 14px; padding-left: 30px; margin-bottom: 10px;}
+	.three-blocks ul li:before{top: 0; width: 19px; height: 19px;}
+
+	/* brands-block */
+	.brands-block .brand-logoes{grid-template-columns: repeat(3, 1fr);}
+
+	/* cloud-learning */
+	.cloud-learning .block form{padding: 17px;}
+	.cloud-learning .block form .input-box-group{flex-direction: row;}
+	.cloud-learning .block form .input-box{max-width: calc(100% / 2 - 5px); margin: 0 0 10px;}
+
+}
+
+
+
+
