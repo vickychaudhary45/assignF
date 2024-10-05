@@ -24,7 +24,6 @@ import CloseIcon from "@material-ui/icons/Close";
 import ModalDelete from "../ModalDelete/ModalDelete";
 import MessageAlert from "../MessageAlert/MessageAlert";
 import ModalQuickRole from "../ModalQuickRole/ModalQuickRole";
-import TablePaginationActions from "../Pagination/Pagination";
 
 // Other imports
 import { PulseLoader } from "../Loader/Loader";
@@ -305,23 +304,6 @@ const RolesPrivilegesTable = (props) => {
           </div>
         )}
       </TableContainer>
-      {/* Pagination */}
-      <TablePagination
-        rowsPerPageOptions={[5, 10, 25, { label: "All", value: totalRows }]}
-        component="div"
-        count={totalRows} // This is what your request should be returning in addition to the current page of rows.
-        rowsPerPage={rowsPerPage}
-        page={page}
-        SelectProps={{
-          inputProps: {
-            "aria-label": "rows per page",
-          },
-          native: true,
-        }}
-        onPageChange={handleChangePage}
-        onRowsPerPageChange={handleChangeRowsPerPage}
-        ActionsComponent={TablePaginationActions}
-      />
       {/* Modal-Delete */}
       <ModalDelete
         open={modaldel}

@@ -10,8 +10,8 @@ import { PulseLoader } from "../Loader/Loader";
 import { useForm } from "react-hook-form";
 import { getRoles } from "../../services/role-privileges/services";
 import AssignRole from "../AssignRoleBlock/AssignRole";
-import AssignCourseSubcriptions from "./AssignCourseSubcriptions";
-import { LearningPageProps } from "../../components/Props/LearningPageProps";
+// import AssignCourseSubcriptions from "./AssignCourseSubcriptions";
+// import { LearningPageProps } from "../../components/Props/LearningPageProps";
 import { useAppState } from "src/stateManagement";
 import { TabPanel, a11yProps  } from "../MUIComponents/MUIComponents";
 
@@ -287,7 +287,7 @@ const AddUserForm = (props) => {
             aria-label="scrollable auto tabs example"
           >
             <Tab label="Individual User" {...a11yProps(0)} />
-            <Tab label="Bulk Users Upload" {...a11yProps(1)} />
+            {/* <Tab label="Bulk Users Upload" {...a11yProps(1)} /> */}
           </Tabs>
         </AppBar>
 
@@ -354,7 +354,7 @@ const AddUserForm = (props) => {
                   />
                 </form>
                 {/* <p>Excel file must be in right format as shown in sample excel file. <a href="/assets/sample/sample.xlsx" download>Download sample file</a></p> */}
-                <AssignCourseSubcriptions
+                {/* <AssignCourseSubcriptions
                   selectedCourses={selectedCourses}
                   setSelectedCourses={setSelectedCourses}
                   selectedBundles={selectedBundles}
@@ -368,7 +368,7 @@ const AddUserForm = (props) => {
                   loading={loading}
                   btnloading={adBtnLoading}
                   progress={progress}
-                />
+                /> */}
                 {loading === true ? <PulseLoader className="loader"
                   style={{ position: "absolute", top: "50%", left: "30%", marginTop: 5, marginLeft: 15 }}
                 /> : null}

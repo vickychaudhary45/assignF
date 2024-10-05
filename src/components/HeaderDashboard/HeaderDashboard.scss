@@ -324,15 +324,15 @@
             a {
               color: $gray6e6d7a;
             }
-            &:after {
-              content: "";
-              height: 1px;
-              width: 180px;
-              background: $grayddd;
-              position: absolute;
-              top: 0;
-              left: 20px;
-            }
+            // &:after {
+            //   content: "";
+            //   height: 1px;
+            //   width: 180px;
+            //   background: $grayddd;
+            //   position: absolute;
+            //   top: 0;
+            //   left: 20px;
+            // }
           }
           li {
             font-family: "Poppins", sans-serif;

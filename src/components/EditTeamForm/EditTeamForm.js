@@ -11,10 +11,6 @@ import { images } from "src/config/images";
 import { HelpOutlineOutlined } from "@material-ui/icons";
 import Tooltip from '@mui/material/Tooltip';
 import IconButton from '@mui/material/IconButton';
-import TransferList from "../TransferList/TransferListTeamCoursesE";
-import TransferLisSubscription from "../TransferLisSubscription/TransferListEditTeam";
-import TransferListLearningPath from "../TransferListLearningPath/TransferListTeamE";
-import TransferListUser from "../TransferListUser/TransferListEditTeam";
 import { CircularProgressWithLabel } from "../MUIComponents/MUIComponents";
 import * as xlsx from "xlsx";
 
@@ -498,53 +494,7 @@ const EditTeamForm = (props) => {
                   <span className="checkmark"></span>
                 </label>
               </div>
-            </div>
-
-            {/* Course block*/}
-            {coursesShow ?
-              <TransferList
-                selectedCourses={selectedCourses}
-                setSelectedCourses={setSelectedCourses}
-                defaultSelectedCourses={defaultSelectedCourses}
-                courses={courses}
-                setCourses={setCourses}
-                requestSearch={requestSearch}
-                setOpen={setOpen}
-                setSeverity={setSeverity}
-                setMessage={setMessage}
-              />
-              : ''}
-
-            {/* Learning-Path block*/}
-            {learningShow ?
-              <TransferListLearningPath
-                selectedLP={selectedLearningPath}
-                setSelectedLP={setSelectedLearningPath}
-                learningPath={learning_path}
-                setLearningPath={setLearning_path}
-                requestSearch={requestSearch}
-                defaultSelectedLearningPath={defaultSelectedLearningPath}
-                setOpen={setOpen}
-                setSeverity={setSeverity}
-                setMessage={setMessage}
-              />
-              : ""}
-
-            {/* Subscription- block */}
-            {subscriptionShow && !subdisabled ?
-              <>
-                <TransferLisSubscription
-                  selectedCourses={selectedBundles}
-                  setSelectedCourses={setSelectedBundles}
-                  courses={subscriptions}
-                  setCourses={setSubscriptions}
-                  requestSearch={requestSearch}
-                  defaultSelectedBundles={defaultSelectedBundles}
-                  setOpen={setOpen}
-                  setSeverity={setSeverity}
-                  setMessage={setMessage}
-                />
-              </> : ("")}
+            </div>     
 
             {/* manager-block */}
             <div className="manager-block users-block">
@@ -586,22 +536,6 @@ const EditTeamForm = (props) => {
             </div>
             {/* users-block */}
             <div className="manager-block users-block">
-              {usertype === 'users' && (
-                <>
-                  <TransferListUser
-                    cancelSearch={cancelSearch}
-                    requestSearch={requestSearch}
-                    users={users}
-                    setUsers={setUsers}
-                    selectedUsers={selectedUsers}
-                    setSelectedUsers={setSelectedUsers}
-                    defaultSelectedUsers={defaultSelectedUsers}
-                    setOpen={setOpen}
-                    setSeverity={setSeverity}
-                    setMessage={setMessage}
-                  />
-                </>
-              )}
               {usertype === 'bulk' && (
                 <>
                   <div className="upload">

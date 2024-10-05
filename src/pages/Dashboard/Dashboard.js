@@ -5,10 +5,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 
 // component import
 import LeftBox from "../../components/LeftBox/LeftBox";
-import InfoGroup from "../../components/InfoGroup/InfoGroup";
-import ReportGroup from "../../components/ReportGroup/ReportGroup";
-import ActivityList from "../../components/ActivityList/ActivityList";
-import LicensesCount from "../../components/LicensesCount/LicensesCount";
+// import LicensesCount from "../../components/LicensesCount/LicensesCount";
 
 // Miscellaneous imports
 import { useAppState } from "src/stateManagement";
@@ -88,11 +85,6 @@ const Dashboard = () => {
             <div className="two-column">
               {/* left-column */}
               <div className="left-column">
-                {App?.privileges.enable_license_feature ? (
-                  <LicensesCount {...App?.privileges} />
-                ) : (
-                  ""
-                )}
                 <div className="users-group">
                   {/* left-box */}
                   <LeftBox
@@ -100,23 +92,7 @@ const Dashboard = () => {
                     usersPrivilege={hasPrivilege("Users")}
                     enrollmentPrivilege={hasPrivilege("Enrollment")}
                   />
-                  {/* right-box */}
-                  <div className="right-box">
-                    <InfoGroup
-                      userData={userData}
-                      learningPathPrivilege={hasPrivilege("Enrollments")}
-                      teamsPrivilege={hasPrivilege("Teams")}
-                    />
-                    <ReportGroup
-                      {...HomePageProps.left_column.report_group}
-                      ptPrivilege={hasPrivilege("Practice Test")}
-                      vcPrivilege={hasPrivilege("Video Course")}
-                      labsPrivilege={hasPrivilege("Labs")}
-                      sandboxPrivilege={hasPrivilege("Sandbox")}
-                    />
-                  </div>
                 </div>
-                <ActivityList {...recentActivites} />
               </div>
             </div>
           </div>

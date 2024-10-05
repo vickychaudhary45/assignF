@@ -7,12 +7,6 @@ const AppCtx = createContext(null);
 export const AppState = props => {
   // update Initial value
   const initialState = {
-    subscription: 0,
-    course: 0,
-    sandboxDetails: [],
-    lab_token: null,
-    sandboxData: null,
-    is_sandbox_running: false,
     privileges: {},
     isLoadingPrivileges: false,
   };
@@ -31,30 +25,6 @@ export const AppState = props => {
         
       case "ISLOADINGPRIVILEGES":
         newState.isLoadingPrivileges = payload;
-        return newState;
-
-      case "SET_SUBSCRIPTION":
-        newState.subscription = payload;
-        return newState;
-
-      case "SET_COURSE":
-        newState.course = payload;
-        return newState;
-
-      case "SET_SANDBOX_DETAILS":
-        newState.sandboxDetails = payload;
-        return newState;
-
-      case "LAB_TOKEN":
-        newState.lab_token = payload;
-        return newState;
-
-      case "CREATE_SANDBOX":
-        newState.sandboxData = payload;
-        return newState;
-
-      case "SET_IS_SANDBOX_RUNNING":
-        newState.is_sandbox_running = payload;
         return newState;
 
       default:

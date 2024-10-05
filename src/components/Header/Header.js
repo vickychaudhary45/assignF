@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { images } from "../../config/images";
-import BrochureContainer from "../BannerTechnology/BrochureContainer";
 import MenuIcon from '@mui/icons-material/Menu';
-import Maintenance from "./../../components/Maintenance/Maintenance";
+// import Maintenance from "./../../components/Maintenance/Maintenance";
 import "../Header/Header.scss"
 import "../../pages/IndexPage/style.css"
 import "../../pages/IndexPage/responsive.css"
@@ -37,9 +36,9 @@ const Header = () => {
               <li>
                 <Link to="/case-study-page" className="request-demo caseStudies">Case Studies</Link>
               </li>
-              <li>
+              {/* <li>
                 <BrochureContainer triggerText={"Download Brochure"} onSubmit={onSubmit} />
-              </li>
+              </li> */}
               <li >
               <a href="/#faqblock">FAQ’s</a>
               </li>
@@ -74,9 +73,6 @@ const Header = () => {
                 <li>
                   <Link to="/case-study-page" className="btn-group">Case Studies</Link>
                 </li>
-                <li className="btn-group">
-                  <BrochureContainer triggerText={"Download Brochure"} onSubmit={onSubmit} />
-                </li>
                 <li>
                   <a href="#faqblock">FAQ’s</a>
                 </li>
@@ -85,7 +81,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <Maintenance />
+      {/* <Maintenance /> */}
     </>
   );
 };

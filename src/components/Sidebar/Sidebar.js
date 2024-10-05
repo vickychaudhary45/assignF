@@ -327,20 +327,11 @@ const Sidebar = () => {
                 );
             }
           })}
-          {/* {!privileges?.is_owner || privileges?.is_employee
-            ? priv_access.map((item, key) => {
-                if (item?.nav_link === "Manage") {
-                  return (
-                    <MenuItem privileges={privileges} key={key} item={item} />
-                  );
-                }
-              })
-            : ""} */}
         </ul>
       </div>
       <div className="links-block">
         <ul>
-          {SidebarProps.links_sec.map((nav_list, index) => {
+          {SidebarProps?.links_sec?.map((nav_list, index) => {
             if (privileges?.is_trail && nav_list.path === "/courses") {
               return;
             } else if (

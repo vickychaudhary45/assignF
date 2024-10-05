@@ -11,13 +11,11 @@ const LoginPage = () => {
   }
 
   return (
-    // <LayoutTwo>
     <div className="main-content login-page">
       <div className="container-big">
         <SignInForm />
       </div>
     </div>
-    // </LayoutTwo>
   );
 };
 

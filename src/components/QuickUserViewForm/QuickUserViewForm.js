@@ -1,14 +1,14 @@
 import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Tabs, Tab } from '@material-ui/core';
-import CourseUserBlock from '../CourseUserBlock/CourseUserBlock';
-import LearningPathUserBlock from '../LearningPathUserBlock/LearningPathUserBlock';
+// import CourseUserBlock from '../CourseUserBlock/CourseUserBlock';
+// import LearningPathUserBlock from '../LearningPathUserBlock/LearningPathUserBlock';
 import { images } from 'src/config/images';
 import { useParams } from 'react-router-dom';
 import AssignRoleBlock from '../AssignRoleBlock/AssignRole';
 import { useForm } from 'react-hook-form';
 import { getRoles } from 'src/services/role-privileges/services';
-import TimelineFrame from '../Timeline/Timeline';
+// import TimelineFrame from '../Timeline/Timeline';
 import { sd } from "../CustomCode/CustomCode";
 import { TabPanel, a11yProps } from "../MUIComponents/MUIComponents";
 
@@ -137,8 +137,8 @@ const QuickUserViewForm = (props) => {
         {/* -------- tab-2 --------- */}
         <TabPanel value={value} index={1} className="tab-content">
           <div className="item-block">
-            <CourseUserBlock {...props.userInfo} />
-            <LearningPathUserBlock {...props.userInfo} />
+            {/* <CourseUserBlock {...props.userInfo} /> */}
+            {/* <LearningPathUserBlock {...props.userInfo} /> */}
             <div className="learning-user-block">
               <div className="list-group">
                 <div className="head-block">
@@ -211,7 +211,7 @@ const QuickUserViewForm = (props) => {
           <div className="item-block">
             <div className="learning-user-block">
               <div className="list-group" style={{ maxHeight: 'calc(100vh - 268px)' }}>
-                <TimelineFrame timelineInfo={props.timelineInfo} profileImg={profileimg} />
+                {/* <TimelineFrame timelineInfo={props.timelineInfo} profileImg={profileimg} /> */}
               </div>
             </div>
           </div>

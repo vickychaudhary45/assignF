@@ -1,7 +1,7 @@
 import React from "react";
 import Dialog from "@material-ui/core/Dialog";
 import { Link } from "react-router-dom";
-import CourseQuickViewLearning from "../CourseUserBlock/CourseQuickViewLearning";
+// import CourseQuickViewLearning from "../CourseUserBlock/CourseQuickViewLearning";
 import LearningUserBlock from "../LearningUserBlock/LearningUserBlock";
 import { DialogTitle } from "../MUIComponents/MUIComponents";
 import "./ModalQuick.scss";
@@ -27,7 +27,7 @@ const ModalQuick = (props) => {
         </div>
         <div className="modal-container">
           {/* courses-block */}
-          <CourseQuickViewLearning {...props.courses_block} />
+          {/* <CourseQuickViewLearning {...props.courses_block} /> */}
           {/* learning-block */}
           <LearningUserBlock {...props.learning_block} />
         </div>

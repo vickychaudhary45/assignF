@@ -8,8 +8,6 @@ import MessageAlert from "../MessageAlert/MessageAlert";
 import { useForm } from "react-hook-form";
 import { getRoles } from "../../services/role-privileges/services";
 import AssignRole from "../AssignRoleBlock/AssignRole";
-import AssignCourseSubcriptions from '../AddUserForm/AssignCourseSubcriptions'
-import { LearningPageProps } from "../../components/Props/LearningPageProps";
 import { CheckPrivileges } from "src/config/utils";
 import { PulseLoader } from "../Loader/Loader";
 import { TabPanel, a11yProps } from "../MUIComponents/MUIComponents";
@@ -276,7 +274,7 @@ const CommonAddUserForm = (props) => {
             aria-label="scrollable auto tabs example"
           >
             <Tab label="Individual User" {...a11yProps(0)} />
-            <Tab label="Bulk Users Upload" {...a11yProps(1)} />
+            {/* <Tab label="Bulk Users Upload" {...a11yProps(1)} /> */}
           </Tabs>
         </AppBar>
 
@@ -345,7 +343,7 @@ const CommonAddUserForm = (props) => {
                   />
                 </form>
                 {/* <p>Excel file must be in right format as shown in sample excel file. <a href="/assets/sample/sample.xlsx" download>Download sample file</a></p> */}
-                <AssignCourseSubcriptions
+                {/* <AssignCourseSubcriptions
                   selectedCourses={selectedCourses}
                   setSelectedCourses={setSelectedCourses}
                   selectedBundles={selectedBundles}
@@ -359,7 +357,7 @@ const CommonAddUserForm = (props) => {
                   loading={loading}
                   btnloading={btnloading}
                   progress={progress}
-                />
+                /> */}
                 {loading === true ? <PulseLoader className="loader"
                   style={{ position: "absolute", top: "50%", left: "30%", marginTop: 5, marginLeft: 15 }}
                 /> : null}

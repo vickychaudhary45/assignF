@@ -12,22 +12,6 @@ const LeftBox = (props) => {
           <Typography>Total Users</Typography>
         </div>
       </Link>
-      <Link
-        to={props.enrollmentPrivilege ? "/reports/enrollment-report" : "#"}
-      >
-        <div className="user">
-          <span>{props.enrolledSubscriptions}</span>
-          <Typography>Enrolled Subscriptions</Typography>
-        </div>
-      </Link>
-      <Link
-        to={props.enrollmentPrivilege ? "/reports/enrollment-report" : "#"}
-      >
-        <div className="user">
-          <span>{props.enrolledCourses}</span>
-          <Typography>Enrolled Courses</Typography>
-        </div>
-      </Link>
     </div>
   );
 };

@@ -23,7 +23,6 @@ import { Button } from "@material-ui/core";
 import { Download } from "@mui/icons-material";
 import { CSVLink } from "react-csv";
 import { PulseLoader } from "../Loader/Loader";
-import TablePaginationActions from "../Pagination/Pagination";
 import { useAppState } from "src/stateManagement";
 import "./EnrollmentTable.scss";
 
@@ -346,24 +345,6 @@ const EnrollmentTable = (props) => {
           </div>
         )}
       </TableContainer>
-      {enrollmentData?.length > 0 && (
-        <TablePagination
-          rowsPerPageOptions={[5, 10, 25, { label: "All", value: totalRows }]}
-          component="div"
-          count={totalRows} // This is what your request should be returning in addition to the current page of rows.
-          rowsPerPage={rowsPerPage}
-          page={page}
-          SelectProps={{
-            inputProps: {
-              "aria-label": "rows per page",
-            },
-            native: true,
-          }}
-          onPageChange={handleChangePage}
-          onRowsPerPageChange={handleChangeRowsPerPage}
-          ActionsComponent={TablePaginationActions}
-        />
-      )}
     </>
   );
 };
