@@ -264,12 +264,12 @@ const RolesPrivilegesTable = (props) => {
                 <TableCell className="roles-name table-heading">
                   Roles Name
                 </TableCell>
-                <TableCell className="members table-heading">
+                {/* <TableCell className="members table-heading">
                   Privileges
-                </TableCell>
-                <TableCell className="date table-heading">
+                </TableCell> */}
+                {/* <TableCell className="date table-heading">
                   <span>Created on</span>
-                </TableCell>
+                </TableCell> */}
                 <TableCell className="actions table-heading">Actions</TableCell>
               </TableRow>
             </TableHead>
@@ -280,10 +280,10 @@ const RolesPrivilegesTable = (props) => {
                     <TableCell component="th" scope="row">
                       {roles_name(row.name)}
                     </TableCell>
-                    <TableCell>
+                    {/* <TableCell>
                       {members(row.permission, dataToRemove)}
-                    </TableCell>
-                    <TableCell>{date(row.created_at)}</TableCell>
+                    </TableCell> */}
+                    {/* <TableCell>{date(row.created_at)}</TableCell> */}
                     <TableCell>
                       {actions(row.id, row.name, row.is_global)}
                     </TableCell>

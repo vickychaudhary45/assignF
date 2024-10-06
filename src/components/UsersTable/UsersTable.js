@@ -37,9 +37,7 @@ const managers = (img, user_name, email, id) => {
           <img className="img-full" src={img} alt="" />
         </figure>
         <div className="detail">
-          <div className="user-name">
-            <Link className="title-link">{user_name}</Link>
-          </div>
+          <div className="user-name">{user_name}</div>
           <div className="user-id">{email}</div>
         </div>
       </div>
@@ -60,7 +58,7 @@ const UsersTable = (props) => {
   const [loading, setLoading] = useState(true);
   const [page] = React.useState(0);
   const [per_page] = React.useState(10);
-  const [searched] = useState("");
+  const [searched, setSearched] = useState("");
   const [alertbox, setAlertbox] = useState(false);
   const [message] = useState("");
   const [severity] = useState("info");
@@ -84,14 +82,44 @@ const UsersTable = (props) => {
   async function fetchData() {
     setLoading(true);
     getUsers(bodyData).then((response) => {
-      setUsers(response?.data);
+      setUsers(response);
       setLoading(false);
     });
   }
 
   useEffect(() => {
+    if (searched.length > 2) {
+      fetchData();
+    } else if (searched.length === 0) {
+      fetchData();
+    }
+  }, [searched]);
+  useEffect(() => {
     fetchData();
   }, []);
+
+  const requestSearch = (searchedVal) => {
+    setSearched(searchedVal.target.value);
+  };
+
+  const actions = (id, is_owner, title, deactive) => {
+    return (
+      <div className="actions icon icon-action">
+        <div className="action-dropdown">
+          <ul>
+            {!deactive && (
+              <li>
+                <Link className="link" to={`/edit-user/${id}`}>
+                  <i className="icon icon-edit"></i>
+                  <span>Edit</span>
+                </Link>
+              </li>
+            )}
+          </ul>
+        </div>
+      </div>
+    );
+  };
 
   let exportData =
     users?.length > 0
@@ -122,6 +150,14 @@ const UsersTable = (props) => {
     <>
       <div className="user-heading-block">
         <div className="title">{props.heading_block.title}</div>
+        <div className="search-bar">
+          <input
+            type="text"
+            placeholder={props.heading_block.placeholder}
+            value={searched}
+            onChange={(searchVal) => requestSearch(searchVal)}
+          />
+        </div>
         <Link className="btn btn-user" to="/add-user">
           <i className="icon icon-pluse"></i>
           <span>{props.heading_block.btn_link}</span>
@@ -147,6 +183,9 @@ const UsersTable = (props) => {
                   <TableCell className="table-heading">
                     <span>Last Login</span>
                   </TableCell>
+                  <TableCell className="actions table-heading">
+                    Actions
+                  </TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -169,6 +208,14 @@ const UsersTable = (props) => {
                         {members(sd(row.created_at))}
                       </TableCell>
                       <TableCell>{status(sd(row.last_login))}</TableCell>
+                      <TableCell>
+                        {actions(
+                          row.id,
+                          row.is_owner,
+                          row.firstname + " " + row.lastname,
+                          row.deleted_at ? true : false
+                        )}
+                      </TableCell>
                     </TableRow>
                   ))
                 ) : (

@@ -3,7 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import * as xlsx from "xlsx";
-import { userBulkUpload, addAUser } from "../../services/users-services/services";
+import { addAUser } from "../../services/users-services/services";
 import MessageAlert from "../MessageAlert/MessageAlert";
 import { useForm } from "react-hook-form";
 import { getRoles } from "../../services/role-privileges/services";
@@ -130,40 +130,40 @@ const CommonAddUserForm = (props) => {
       const timer = setInterval(() => {
         setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 1));
       }, 1600);
-      userBulkUpload(data).then((res) => {
-        let rejectedUsers;
-        if (res.data.status === "success") {
-          setBtnloading(false);
-          clearInterval(timer);
-          setMessage(res.data.message);
-          setSeverity("success");
-          setOpen(true);
-          setTimeout(() => {
-            setOpen(false);
-            rejectedUsers = res.data.data.rejected_users;
-            if (rejectedUsers.length > 0) {
-              const text = JSON.stringify(rejectedUsers);
-              const a = document.createElement("a");
-              const file = new Blob([text], { type: "text/plain" });
-              a.href = URL.createObjectURL(file);
-              a.download = "rejectedUsers.txt";
-              a.click();
-              setBtnloading(false);
-              clearInterval(timer);
-              resetUploadFile();
-            }
-            window.location.href = `/users`;
-            setFile([]);
-          }, 3000);
-        } else {
-          setMessage(res.data.message);
-          setSeverity("error");
-          setOpen(true);
-          setBtnloading(false);
-          clearInterval(timer);
-          resetUploadFile();
-        }
-      })
+      // userBulkUpload(data).then((res) => {
+      //   let rejectedUsers;
+      //   if (res.data.status === "success") {
+      //     setBtnloading(false);
+      //     clearInterval(timer);
+      //     setMessage(res.data.message);
+      //     setSeverity("success");
+      //     setOpen(true);
+      //     setTimeout(() => {
+      //       setOpen(false);
+      //       rejectedUsers = res.data.data.rejected_users;
+      //       if (rejectedUsers.length > 0) {
+      //         const text = JSON.stringify(rejectedUsers);
+      //         const a = document.createElement("a");
+      //         const file = new Blob([text], { type: "text/plain" });
+      //         a.href = URL.createObjectURL(file);
+      //         a.download = "rejectedUsers.txt";
+      //         a.click();
+      //         setBtnloading(false);
+      //         clearInterval(timer);
+      //         resetUploadFile();
+      //       }
+      //       window.location.href = `/users`;
+      //       setFile([]);
+      //     }, 3000);
+      //   } else {
+      //     setMessage(res.data.message);
+      //     setSeverity("error");
+      //     setOpen(true);
+      //     setBtnloading(false);
+      //     clearInterval(timer);
+      //     resetUploadFile();
+      //   }
+      // })
     }
     setFile('');
   }

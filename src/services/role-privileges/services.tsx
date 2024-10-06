@@ -106,12 +106,3 @@ export const getPermissions = async (userId: any) => {
     return error;
   }
 };
-
-export const subscription_status = async (userId: any) => {
-  try {
-    const response = await api.get(`users/subscription_status?user_id=${userId}`,);
-    return response.data;
-  } catch (error) {
-    return error;
-  }
-};

@@ -89,7 +89,7 @@ const HeaderDashboard = ({ privileges, setFeedbackModal }) => {
           <div className="user-login-block">
             {/* {showFeedbackFormButton ? */}
             <div onClick={openFeedbackModal}>
-              <Tooltip title="Fill Feedback Form">
+              <Tooltip>
                 <IconButton className="feedback-form-btn">
                   <TextsmsIcon className="feedback_icon" />
                 </IconButton>

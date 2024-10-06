@@ -11,10 +11,7 @@ import LeftBox from "../../components/LeftBox/LeftBox";
 import { useAppState } from "src/stateManagement";
 import { PermissionContexts } from "../../PermissionContexts";
 import { HomePageProps } from "../../components/Props/HomePageProps";
-import {
-  getDashboardCount,
-  getRecentActivities,
-} from "../../services/Dashboard/services";
+import { getDashboardCount } from "../../services/Dashboard/services";
 
 const Dashboard = () => {
   const { privileges } = useContext(PermissionContexts);
@@ -55,10 +52,6 @@ const Dashboard = () => {
         enrolledSubscriptions: res.enrolledSubscriptions,
         enrolledCourses: res.enrolledCourses,
       });
-    });
-
-    getRecentActivities().then((res) => {
-      setRecentActivitesData({ list: res.data });
     });
 
     setLoading(false);
