@@ -1,6 +1,6 @@
 import api from "../axios-config/app";
 
-export const getUsers = async (bodyData: any) => {  
+export const getUsers = async (bodyData: any) => {
   try {
     const response = await api.post(`users/list`, bodyData);
     return response.data.data;
@@ -50,6 +50,14 @@ export const getUserRecord = async (formData: any) => {
 export const addAUser = async (formData: any) => {
   try {
     const response = await api.post(`users/add`, formData);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
+};
+export const addAForm = async (formData: any) => {
+  try {
+    const response = await api.post(`users/add-form`, formData);
     return response.data;
   } catch (error) {
     return error;

@@ -1,0 +1,55 @@
+.modal-box{
+  padding : 20px !important;
+  .MuiPaper-root{
+    box-shadow: none ;
+    margin-bottom: 10px;
+  }
+  .tab-parent{
+    .MuiAppBar-root{
+      background-color: white;
+      border-bottom: 1px solid #f16521;
+      padding-bottom: 0px;
+      .MuiTabs-root{
+        margin-bottom:  -1px;
+        margin-left: 0px;
+        .MuiButtonBase-root{
+          background-color: #fff0e2;
+          border-bottom: 1px solid #f16521 ;
+          margin-right: 5px;
+          box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -30px inset, rgba(0, 0, 0, 0.05) 0px 18px 36px -18px inset;
+        }
+        .MuiButtonBase-root.Mui-selected{
+          background-color: white;
+          color : #f16521 ;
+          border: 1px dotted #f16521 ;
+          border-bottom: none;
+          border-radius: 5px;
+        } 
+        .MuiTabs-indicator{
+          background-color: white;
+          height : 1px;
+        }
+      }
+    }
+    .tab-content{
+      .input-box-group , .input-box{
+          margin: 15px auto;
+      }
+      .loader {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        .inner-loader-div {
+          margin: 0 auto;
+        }
+      }
+      .upload{
+        .Instructions{
+          max-height : 78vh;
+          overflow-y: auto;
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

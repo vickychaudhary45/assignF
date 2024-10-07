@@ -5,26 +5,14 @@ export const SidebarProps = {
     {
       nav_link: "Dashboard",
       path: "/dashboard",
-      path_employee: "/home-user",
+      path_employee: "/dashboard",
       icon: "icon icon-dashboard-nav",
     },
     {
-      nav_link: "Fill feedback form",
+      nav_link: "Feedback form",
       path: "/enroll-users",
       icon: "icon icon-question",
     },
-    // {
-    //   nav_link: "Analytics",
-    //   path: "/reports",
-    //   icon: "icon icon-analytics-nav",
-    //   sub_nav_link: [
-    //     {
-    //       nav_link: "Enrollment",
-    //       path: "/reports/enrollment-report",
-    //       icon: "icon icon-bundle-card",
-    //     },
-    //   ],
-    // },
     {
       nav_link: "Manage",
       path: "/manage",

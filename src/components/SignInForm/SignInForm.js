@@ -30,7 +30,7 @@ const SignInForm = ({ userInfo }) => {
     if (response.status === true) {
       setTimeout(() => {
         if (response.data.is_owner) window.location.href = `/dashboard`;
-        else window.location.href = `/home-user`;
+        else window.location.href = `/dashboard`;
         setLoading(false);
       }, 1000);
     }

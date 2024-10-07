@@ -1,15 +1,16 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
-import { CustomizedRating } from "./Rating";
-import logoImage from "../../assets/images/logo-small.svg";
-import LinearProgress from "@mui/material/LinearProgress";
-import Snackbar from "@mui/material/Snackbar";
-import { updateFeedbackForm } from "src/services/Dashboard/services";
-import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
-import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+
 import moment from "moment";
 import "./FeedbackModal.scss";
+
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Snackbar from "@mui/material/Snackbar";
+import LinearProgress from "@mui/material/LinearProgress";
+import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
+import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
+import { CustomizedRating } from "./Rating";
+import { updateFeedbackForm } from "src/services/Dashboard/services";
 
 const style = {
   position: "absolute",
@@ -25,9 +26,9 @@ const style = {
 };
 
 const questions = [
-  " How satisfied are you with our teams effort during Onboarding process ? ",
-  " How would you rate the course content of our platform ?",
-  " How satisfied are you with our Learning Management System for program administration ?",
+  " How satisfied are you with teams effort during work ? ",
+  " How would you rate the collaboration efforts ?",
+  " How satisfied are you with Learning Management System for program administration ?",
 ];
 
 export const FeedbackModal = ({ open, setOpen }) => {
@@ -43,11 +44,12 @@ export const FeedbackModal = ({ open, setOpen }) => {
       return obj;
     }, {})
   );
-  const [suggestionError, setSuggestionError] = React.useState(false);
-  const [suggestion, setSuggestion] = React.useState("");
+
   const [loading, setLoading] = React.useState(false);
+  const [suggestion, setSuggestion] = React.useState("");
   const [openToast, setOpenToast] = React.useState(false);
   const [toastStatus, setToastStatus] = React.useState(false);
+  const [suggestionError, setSuggestionError] = React.useState(false);
 
   const rating_error_msg = "Please select a rating";
   const suggestion_error_msg = "Please add you valuable suggestion";
@@ -68,7 +70,6 @@ export const FeedbackModal = ({ open, setOpen }) => {
     setSuggestionError(false);
 
     let no_errors = true;
-    // check for validation, ratings and textarea
     for (let key in ratingErrors) {
       if (ratings[key] === -1) {
         no_errors = false;
@@ -198,10 +199,10 @@ export const FeedbackModal = ({ open, setOpen }) => {
                     value={suggestion}
                     onChange={(e) => setSuggestion((prev) => e.target.value)}
                   />
-                  {suggestion?.length <= 60 ? (
+                  {suggestion?.length <= 10 ? (
                     <p className="min-character">
                       {" "}
-                      Minimum 60 characters ({suggestion?.length} / 60)
+                      Minimum 10 characters ({suggestion?.length} / 10)
                     </p>
                   ) : (
                     ""

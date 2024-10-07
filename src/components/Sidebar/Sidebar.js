@@ -38,55 +38,6 @@ const SingleLevel = ({ item, privileges }) => {
             <span>{item.nav_link}</span>
           </NavLink>
         </Tooltip>
-      ) : item.nav_link === "Requested Courses" ? (
-        <Tooltip title={item.nav_link} placement="right">
-          <NavLink exact to={item.path} activeClassName="active">
-            <i className={`${item.icon}`}></i>
-            <span>{item.nav_link}</span>
-            {item.nav_link === "Requested Courses" &&
-            privileges.totalUserRequestCourses > 0 ? (
-              <span className="notification-badge">
-                {privileges.totalUserRequestCourses}
-              </span>
-            ) : null}
-          </NavLink>
-        </Tooltip>
-      ) : item.nav_link === "Workspaces" ? (
-        privileges.enable_workspaces && (
-          <Tooltip title={item.nav_link} placement="right">
-            <NavLink exact to={item.path} activeClassName="active">
-              <i className={`${item.icon}`}></i>
-              <span>{item.nav_link}</span>
-            </NavLink>
-          </Tooltip>
-        )
-      ) : item.nav_link === "Custom Sandboxes" ? (
-        privileges.enable_custom_sandbox && (
-          <Tooltip title={item.nav_link} placement="right">
-            <NavLink exact to={item.path} activeClassName="active">
-              <i className={`${item.icon}`}></i>
-              <span>{item.nav_link}</span>
-            </NavLink>
-          </Tooltip>
-        )
-      ) : item.nav_link === "Virtual Machines" ? (
-        privileges.enable_vm && (
-          <Tooltip title={item.nav_link} placement="right">
-            <NavLink exact to={item.path} activeClassName="active">
-              <i className={`${item.icon}`}></i>
-              <span>{item.nav_link}</span>
-            </NavLink>
-          </Tooltip>
-        )
-      ) : item.nav_link === "Labs Validation Report" ? (
-        privileges.enable_lab_validation && (
-          <Tooltip title={item.nav_link} placement="right">
-            <NavLink exact to={item.path} activeClassName="active">
-              <i className={`${item.icon}`}></i>
-              <span>{item.nav_link}</span>
-            </NavLink>
-          </Tooltip>
-        )
       ) : (
         <Tooltip title={item.nav_link} placement="right">
           <NavLink exact to={item.path} activeClassName="active">
@@ -210,9 +161,10 @@ const Sidebar = () => {
     item?.sub_nav_link &&
       item.sub_nav_link.map((itm, key) => {
         if (!privileges?.is_owner || privileges?.is_employee) {
-          if (privileges?.privileges.includes(itm?.nav_link)) {
-            priv_access[0].sub_nav_link.push(itm);
-          }
+          priv_access[0].sub_nav_link.push(itm);
+          // if (privileges?.privileges.includes(itm?.nav_link)) {
+          //   priv_access[0].sub_nav_link.push(itm);
+          // }
         }
       });
     if (
@@ -276,48 +228,8 @@ const Sidebar = () => {
               return;
             }
             if (
-              privileges?.is_employee &&
-              !privileges?.enable_lab_validation &&
-              !hasLabMonitorItems &&
-              item.nav_link === "Lab Monitors"
-            ) {
-              return;
-            }
-            if (
-              privileges?.is_employee &&
-              !hasLab &&
-              item.nav_link === "Lab Monitors"
-            ) {
-              return;
-            } else if (
-              privileges?.enable_lab_validation &&
-              item.nav_link === "Lab Monitors"
-            ) {
-              if (item.nav_link === "Labs Validation Report") {
-                return (
-                  <MenuItem privileges={privileges} key={key} item={item} />
-                );
-              }
-            }
-            if (
-              privileges?.is_employee &&
-              item.nav_link == "Courses Library" &&
-              !privileges?.is_sitewide &&
-              !privileges?.privileges.includes("Courses")
-            ) {
-              return <MenuItem privileges={privileges} key={key} item={item} />;
-            }
-            if (
-              item.nav_link === "Custom Environment" &&
-              !privileges?.enable_custom_sandbox &&
-              !privileges?.enable_workspaces
-            ) {
-              return null;
-            } else if (
               item.nav_link !== "Courses Library" &&
-              (privileges?.is_owner ||
-                (privileges?.is_employee &&
-                  privileges?.privileges.includes(item.nav_link)))
+              (privileges?.is_owner || privileges?.is_employee)
             ) {
               if (item.path === "/courses-user-page") {
                 if (privileges?.privileges.includes("Courses")) return;
