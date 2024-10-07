@@ -300,7 +300,7 @@ const CommonAddUserForm = (props) => {
                     <label>
                       Email Address <span>*</span>
                     </label>
-                    <input type="email" placeholder="E.g. john@whizlabs.com" value={email} onChange={(e) => setEmail(e.target.value)} />
+                    <input type="email" placeholder="E.g. john@feedback.com" value={email} onChange={(e) => setEmail(e.target.value)} />
                   </div>
                 </div>
               </form>
@@ -322,7 +322,7 @@ const CommonAddUserForm = (props) => {
                   <PulseLoader />
                 </div>
               </div> : <div className="add-user-prohibited-msg">
-                <span>Please contact Whizlabs Customer Service at <a href="mailto:support@whizlabs.com">support@whizlabs.com</a></span>
+                <span>Please contact feedback Customer Service at <a href="mailto:support@feedback.com">support@feedback.com</a></span>
               </div>
           }
         </TabPanel>
@@ -380,7 +380,7 @@ const CommonAddUserForm = (props) => {
               <div className="" style={{ marginTop: '10px' }}>
                 <span>Loading...</span>
               </div> : <div className="add-user-prohibited-msg">
-                <span>Please contact Whizlabs Customer Service at <a href="mailto:support@whizlabs.com">support@whizlabs.com</a></span>
+                <span>Please contact feedback Customer Service at <a href="mailto:support@feedback.com">support@feedback.com</a></span>
               </div>
           }
         </TabPanel>

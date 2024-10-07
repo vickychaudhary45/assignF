@@ -42,7 +42,7 @@ const SignInForm = ({ userInfo }) => {
     <div className="sign-in-block">
       <div className="sign-container">
         <div className="sign-header">
-          <div className="title">Login To Whizlabs</div>
+          <div className="title">Login To feedback</div>
         </div>
         <div className="sign-content">
           <form action="#" onSubmit={handleSubmit(onSubmit)}>

@@ -125,7 +125,7 @@ const FillUpForm = () => {
 
   const calendlyFormData = {
     uri: meetingUri,
-    name: "Whizlabs LMS Demo",
+    name: "feedback LMS Demo",
     status: "active",
   }
   const confirmDemoHandler = async () => {
@@ -196,7 +196,7 @@ const FillUpForm = () => {
         <>
           {showCalendar == true ? (
             <div id="calendar" className="date-calendar-block">
-              <InlineWidget url={`${process.env.REACT_APP_CALENDLY_WHIZLABS_DEMO_EVENT_LINK}?hide_gdpr_banner=1`}
+              <InlineWidget url={`${process.env.REACT_APP_CALENDLY_feedback_DEMO_EVENT_LINK}?hide_gdpr_banner=1`}
                 pageSettings={pagesetting}
                 styles={style}
                 prefill={prefill}
@@ -253,7 +253,7 @@ const FillUpForm = () => {
                         {/* Verify Email */}
                       </label>
                     </div>
-                    <input type="email" placeholder="e.g. johnsmith@whizlabs.com."
+                    <input type="email" placeholder="e.g. johnsmith@feedback.com."
                       {...register('email', {
                         required: { value: true, message: 'Email is required.' },
                         // pattern to accept this kind of email spatil@parkar.consulting
@@ -451,7 +451,7 @@ const FillUpForm = () => {
             <Link to="/" className="link">
               <i className="icon-arrow-right"></i>
               <span>
-                Back to <strong>Whizlabs Business</strong>
+                Back to <strong>feedback Business</strong>
               </span>
             </Link>
           </div>

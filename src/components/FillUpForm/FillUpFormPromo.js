@@ -107,7 +107,7 @@ const FillUpFormPromo = () => {
                     {/* Verify Email */}
                   </label>
                 </div>
-                <input type="email" placeholder="e.g. johnsmith@whizlabs.com."
+                <input type="email" placeholder="e.g. johnsmith@feedback.com."
                   {...register("email", {
                     required: { value: true, message: "Email is required." },
                     // pattern to accept this kind of email spatil@parkar.consulting
@@ -201,7 +201,7 @@ const FillUpFormPromo = () => {
             <p>You are very important to us, all information received will always remain confidential. We will contact you in 24hrs.</p>
             <Link to="/" className="link">
               <i className="icon-arrow-right"></i>
-              <span>Back to <strong>Whizlabs Business</strong></span>
+              <span>Back to <strong>feedback Business</strong></span>
             </Link>
           </div>
         </div>

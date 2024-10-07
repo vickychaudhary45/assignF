@@ -222,7 +222,7 @@ textarea:focus{background: #fff; border-color: #FBD0BC !important; box-shadow: 0
 .custom-checkbox input{position: absolute; opacity: 0; visibility: hidden; width: 16px; height: 16px; margin: 0;}
 .custom-checkbox .checkbox-style{position: relative; width: 16px; height: 16px; margin: 0 10px 0 0; border: 1px solid #C3C2C9; border-radius: 2px; background-color: #fff;}
 .custom-checkbox input:checked ~ .checkbox-style{background-color: #007CFF; border: 1px solid #007CFF;}
-.custom-checkbox .checkbox-style:before{position: absolute; content: "F"; font-family: "whizlabs30"; font-size: 10px; color: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.custom-checkbox .checkbox-style:before{position: absolute; content: "F"; font-family: "feedback30"; font-size: 10px; color: #fff; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 /* custom-radiobutton */
 .custom-radiobutton{position: relative; display: flex; align-items: flex-start; margin: 0; cursor: pointer;}
@@ -237,7 +237,7 @@ textarea:focus{background: #fff; border-color: #FBD0BC !important; box-shadow: 0
 .custom-selectbox{position: relative; display: grid; width: 100%;}
 .custom-selectbox select{display: none;}
 .custom-selectbox .select-selected{display: block; align-items: center; width: 100%; color: #1F2430; background-color: #F5F7FA; height: 40px; font-size: 14px; font-weight: 400; padding: 10px 30px 10px 15px; border-radius: 6px; cursor: pointer; user-select: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-.custom-selectbox .select-selected:after{content: '5'; font-family: "whizlabs30"; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); color: #1F2430;  font-size: 12px; transition: 0.2s ease-in-out;}
+.custom-selectbox .select-selected:after{content: '5'; font-family: "feedback30"; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); color: #1F2430;  font-size: 12px; transition: 0.2s ease-in-out;}
 .custom-selectbox .select-selected.select-arrow-active:after{transform: translateY(-58%) rotate(180deg);}
 .custom-selectbox .select-selected.select-arrow-active{border-radius: 6px 6px 0 0;}
 

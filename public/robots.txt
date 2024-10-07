@@ -15,4 +15,4 @@ Disallow: /request-demo-page/banner
 Disallow: /request-demo-page/trail
 Disallow: /request-for-a-demo
 Disallow: /request-demo-page/customize
-Sitemap: https://business.whizlabs.com/sitemap.xml
+Sitemap: https://business.feedback.com/sitemap.xml
