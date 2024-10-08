@@ -33,11 +33,27 @@ const EnrollUsers = () => {
     fetchFeedbacks();
   }, []);
 
+  // useEffect(() => {
+  //   if (
+  //     privileges &&
+  //     Array.isArray(privileges.privileges) &&
+  //     privileges.privileges.length > 0
+  //   ) {
+  //     setFeedbackModal(privileges.privileges[0] === "Allow_to_fill");
+  //   } else {
+  //     setFeedbackModal(false); // Or handle accordingly if no privileges
+  //   }
+  // }, [privileges]);
   useEffect(() => {
     if (priv?.feedback_form) {
-      setFeedbackModal(true);
+      setFeedbackModal(!priv?.privileges.length === 0);
     }
   }, [privileges]);
+
+  // console.log(privileges, "privileges");
+  console.log(feedbackModal, "feedbackModal");
+  console.log(priv, "priv");
+  console.log(priv?.privileges.length, "privileges?.privileges[0]");
 
   return (
     <Layout>
@@ -97,7 +113,7 @@ const EnrollUsers = () => {
                 </>
               ) : (
                 <>
-                  <p>Feedbacks submitted.</p>
+                  <p>Feedback Form</p>
                 </>
               )}
             </div>

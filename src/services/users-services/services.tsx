@@ -63,3 +63,13 @@ export const addAForm = async (formData: any) => {
     return error;
   }
 };
+export const getAForm = async (formData: any) => {
+  try {
+    const response = await api.get(`users/get-form`);
+    return response.data;
+  } catch (error) {
+    return error;
+  }
+};
+
+

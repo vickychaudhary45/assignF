@@ -102,40 +102,7 @@ const MultiLevel = ({ item, privileges }) => {
                   </>
                 );
               }
-              // else if (
-              //   child.nav_link === "Create Learning Path" ||
-              //   child.nav_link === "Roles/Privileges"
-              // ) {
-              //   console.log("here3");
-              //   return (
-              //     <>
-              //       <MenuItem privileges={privileges} key={key} item={child} />
-              //     </>
-              //   );
-              // }
             })}
-            {/* {children.map((child, key) => {
-              if (privileges?.is_owner) {
-                return (
-                  <>
-                    <MenuItem privileges={privileges} key={key} item={child} />
-                  </>
-                );
-              } else if (
-                !child.nav_link.includes("Live") &&
-                !child.nav_link.includes("Behaviour") &&
-                ((privileges?.is_employee &&
-                  child.nav_link != "Enrollment Report") ||
-                  (child.nav_link == "Enrollment Report" &&
-                    privileges?.privileges.includes("Analytics")) ||
-                  privileges?.is_owner)
-              )
-                return (
-                  <>
-                    <MenuItem privileges={privileges} key={key} item={child} />
-                  </>
-                );
-            })} */}
           </List>
         </Collapse>
       </li>

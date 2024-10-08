@@ -54,7 +54,6 @@ const CommonAddUserForm = (props) => {
       company_id: user_data.data.company_id,
       selectedUserId: selectedUserId,
     };
-    console.log(formData, "formData");
 
     if (
       formData.firstname === "" ||

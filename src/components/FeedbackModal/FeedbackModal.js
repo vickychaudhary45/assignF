@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 
 import moment from "moment";
 import "./FeedbackModal.scss";
@@ -11,6 +11,7 @@ import ThumbUpAltIcon from "@mui/icons-material/ThumbUpAlt";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 import { CustomizedRating } from "./Rating";
 import { updateFeedbackForm } from "src/services/Dashboard/services";
+import { getAForm } from "src/services/users-services/services";
 
 const style = {
   position: "absolute",
@@ -25,31 +26,21 @@ const style = {
   overflow: "hidden",
 };
 
-const questions = [
-  " How satisfied are you with teams effort during work ? ",
-  " How would you rate the collaboration efforts ?",
-  " How satisfied are you with Learning Management System for program administration ?",
-];
+// const questions = [
+//   " How satisfied are you with teams effort during work ? ",
+//   " How would you rate the collaboration efforts ?",
+//   " How satisfied are you with Learning Management System for program administration ?",
+// ];
 
 export const FeedbackModal = ({ open, setOpen }) => {
-  const [ratings, setRatings] = React.useState(
-    questions.reduce((obj, ques, index) => {
-      obj["q" + index] = -1;
-      return obj;
-    }, {})
-  );
-  const [ratingErrors, setRatingErrors] = React.useState(
-    questions.reduce((obj, ques, index) => {
-      obj["q" + index] = false;
-      return obj;
-    }, {})
-  );
-
   const [loading, setLoading] = React.useState(false);
   const [suggestion, setSuggestion] = React.useState("");
   const [openToast, setOpenToast] = React.useState(false);
   const [toastStatus, setToastStatus] = React.useState(false);
   const [suggestionError, setSuggestionError] = React.useState(false);
+
+  const [formData, setFormData] = useState(null); // State to store the fetched form data
+  const [error, setError] = useState(null); // State to handle any errors
 
   const rating_error_msg = "Please select a rating";
   const suggestion_error_msg = "Please add you valuable suggestion";
@@ -128,6 +119,43 @@ export const FeedbackModal = ({ open, setOpen }) => {
     handleClose();
   }
 
+  useEffect(() => {
+    const fetchFormData = async () => {
+      try {
+        const response = await getAForm();
+        setFormData(response.data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchFormData();
+  }, []);
+
+  const questions = [
+    // "How satisfied are you with teams effort during work?",
+    // "How would you rate the collaboration efforts?",
+    // "How satisfied are you with Learning Management System for program administration?",
+    `${formData?.firstname}`,
+    `${formData?.lastname}`,
+    `${formData?.email}`,
+  ];
+
+  const [ratings, setRatings] = React.useState(
+    questions.reduce((obj, ques, index) => {
+      obj["q" + index] = -1;
+      return obj;
+    }, {})
+  );
+  const [ratingErrors, setRatingErrors] = React.useState(
+    questions.reduce((obj, ques, index) => {
+      obj["q" + index] = false;
+      return obj;
+    }, {})
+  );
+
   return (
     <div>
       <Modal
@@ -143,7 +171,9 @@ export const FeedbackModal = ({ open, setOpen }) => {
             {loading ? <LinearProgress color="success" /> : ""}
             <div className="feedback-header">
               <div className="title">
-                Your Feedback will helps us to improve!
+                Please provide feedback for{" "}
+                {formData?.user_email.split("@")[0].charAt(0).toUpperCase() +
+                  formData?.user_email.split("@")[0].slice(1)}
               </div>
               <div
                 class="icon icon-cross cancel-icon"
